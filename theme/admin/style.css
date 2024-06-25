@@ -1,0 +1,423 @@
+@import url('../css/font-awesome.min.css');
+
+html, body {
+	margin:0;
+	padding:0;
+	color: #666666;
+	font-size:14px;
+}
+
+table {
+	font-size:14px;
+}
+
+a {
+	font-size:14px;
+	color:#666666;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #999999;
+}
+
+input.text {
+	width:200px;
+}
+
+input.sredni_text {
+	width:110px;
+}
+
+input.mini_text {
+	width:50px;
+}
+
+.tekst {
+	width:200px;
+}
+
+.title {
+	font-size:14px;
+	font-weight:bold;
+}
+
+.tiny,
+.tiny a {
+	font-size:11px;
+}
+.help-block {
+	font-size: 11px;
+	opacity: 0.65;
+	font-weight: normal;
+}
+.przycisk {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:8px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.przycisk:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+
+table {
+	width:100%;
+	border:0;
+}
+
+#adminTable input.text,
+input.text_mini,
+input.text_long {
+	padding:3px;
+	border:1px solid #CCCCCC;
+}
+
+#adminTable input.text {
+	width:200px;
+}
+
+#adminTable input.text_long {
+	width:500px;
+}
+
+#adminTable input.text_mini {
+	width:80px;
+}
+
+#adminTable table {
+	width:100%;
+	padding:5px;
+	border:1px solid #CCCCCC;
+}
+
+#adminTable td,
+#adminTable th {
+	border:1px solid #CCCCCC;
+	padding:5px;
+	background:#FBFBFB;
+}
+
+td.menu_glowne {
+	width:20%;
+	border-right:1px solid #BBBBBB;
+	vertical-align:top;
+}
+
+td.menu_glowne h3 {
+	margin-left:30px;
+}
+
+td.menu_glowne ul {
+	list-style-type:disc;
+}
+
+td.menu_glowne li {
+	border-bottom:1px solid #E1E1E1;
+	padding:5px 0;
+	margin:5px 0;
+}
+
+#clear {
+	clear:both;
+}
+
+#error_box {
+	margin-bottom:10px;
+	background:url(../../images/system/tip.png) 3px no-repeat #f7dfdf;
+	border:1px solid #d3b4b4;
+	padding:15px 60px;
+	font-size:14px;
+	line-height:20px;
+	color:#808680;
+	border-radius:5px;
+}
+
+#info_box {
+	margin-bottom:10px;
+	background:url(../../images/system/info_tip.png) 3px no-repeat #daefda;
+	border:1px solid #c2d5c4;
+	vertical-align:middle;
+	padding-top:15px;
+	padding-left:60px;
+	padding-bottom:15px;
+	font-size:14px;
+	line-height:20px;
+	border-radius:5px;
+	color:#808680;
+}
+
+div#menuAdmin {
+	border:1px solid #CCC;
+	background-color:#F6F6F6;
+	padding:10px;
+}
+
+div#menuAdmin ul {
+	margin:0;
+	padding:0;
+}
+
+div#menuAdmin ul li {
+	display:inline;
+	padding:10px;
+}
+
+div#menuAdmin ul li a {
+	font-weight:bold;
+}
+
+table#cennik {
+	width:80%;
+	border:1px solid #CCC;
+}
+
+table#cennik tr.naglowek {
+	background-color:#E1E1E1;
+	text-align:center;
+	font-weight:bold;
+}
+
+table#cennik tr.naglowek td {
+	padding:5px;
+}
+
+table#cennik tr.wartosci {
+	background-color:#F6F6F6;
+	text-align:center;
+}
+
+table#cennik tr.wartosciInne {
+	background-color:#F6F6F6;
+	text-align:left;
+}
+
+table#cennik tr.wartosci input[type=text],
+table#cennik tr.wartosciInne input[type=text] {
+	width:80px;
+	border:1px solid #CCC;
+	padding:5px;
+}
+
+table#cennik tr.wartosci select,
+table#cennik tr.wartosciInne select {
+	width:120px;
+}
+
+table#settings {
+	border:1px solid #E1E1E1;
+	background-color:#F6F6F6;
+}
+
+table#settings td.nazwa {
+	width:200px;
+	font-weight:bold;
+}
+
+font.pozytywny,
+font.konto_niepotwierdzone {
+	font-weight:bold;
+	color:#090;
+}
+
+font.neutralny,
+font.konto_aktywne {
+	font-weight:bold;
+}
+
+font.negatywny,
+font.konto_zawieszone {
+	font-weight:bold;
+	color:#D20000;
+}
+
+ul#paginacja {
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+ul#paginacja li {
+	display:inline-block;
+	border:1px solid #CCC;
+	padding:3px 6px;
+	margin:3px;
+	text-align:center;
+	background-color:#EBEBEB;
+}
+
+table td #lista_kategorii select,
+#lista_kategorii select {
+	width:180px;
+	marign:0 10px;
+}
+
+table#userInfo {
+	background-color:#FBFBFB;
+}
+
+table#userInfo td {
+	padding:5px;
+	border:1px solid #CCC;
+}
+
+table#userInfo td.nazwa {
+	width:20%;
+	font-weight:bold;
+}
+
+table#userInfo td.inne {
+	width:50%;
+	vertical-align:top;
+	line-height:20px;
+}
+
+table#userInfo td.pole input,
+table#userInfo td.pole select {
+	width:200px;
+}
+
+table#ogloszenia tr.top td {
+	border:1px solid #CCC;
+	font-weight:bold;
+	padding:5px;
+	background-color:#EBEBEB;
+}
+
+table#ogloszenia tr.lista td {
+	padding:5px;
+}
+
+div.szukajOgloszenie {
+	border:1px solid #CCC;
+	background-color:#EBEBEB;
+	padding:5px;
+	margin:0 2px 10px;
+}
+
+div.szukajOgloszenie input.fraza {
+	padding:3px;
+	width:150px;
+	border:1x solid #CCC;
+}
+
+.clock {
+	margin:20px 20px 0 0
+}
+
+.clock span {
+	font-weight:bold
+}
+.alert-success,
+.alert-danger {
+	position: relative;
+}
+.alert-success::before {
+	content: '\f05a';
+  font-family:FontAwesome;
+	font-size: 25px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px
+}
+.alert-danger::before {
+	content: '\f05e';
+  font-family:FontAwesome;
+	font-size: 25px;
+	position: relative;
+	top: 4px;
+	margin-right: 10px
+}
+
+.item-add label {
+  font-size: 14px
+}
+.item-add .ck-editor__editable {
+  min-height:400px;
+  max-height:400px;
+}
+.item-add .lang-list {
+  background: #f2f2f2;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  padding: 5px 10px 5px;
+  height: 70px;
+  display: inline-block;
+}
+.item-add .lang-list label {
+  display: inline-block;
+  width: 22px;
+  margin: 5px 15px 0;
+  padding-bottom: 12px;
+  background-repeat: no-repeat;
+  background-position:0 100%;
+  text-align: center;
+}
+.user-register-form .lang-list span {
+  display: inline-block;
+  width: 23px;
+  height: 26px;
+  margin: 5px 15px 0 0;
+  padding-bottom: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  top: -8px
+}
+.item-add .lang-list .pl,
+.user-register-form .lang-list .pl {
+  background-image: url(../img/lang-pl.png);
+}
+.item-add .lang-list .ru,
+.user-register-form .lang-list .ru {
+  background-image: url(../img/lang-ru.png);
+}
+.item-add .lang-list .en,
+.user-register-form .lang-list .en {
+  background-image: url(../img/lang-uk.png);
+}
+.item-add .lang-list label input {
+  margin-bottom: 20px
+}
+.item-add .select-langs option {
+  background: url(../img/lang-uk.png) no-repeat;
+  border: 1px solid red;
+  font-weight: bold;
+}
+.item-add .photos button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.parent {
+	line-height: 40px;
+	margin-bottom: 10px;
+}

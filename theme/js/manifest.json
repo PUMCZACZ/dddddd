@@ -1,0 +1,24 @@
+{
+  "background_color": "#ffffff",
+  "description": "Skrypt platformy handlowej oferowany przez firmę JMLnet spełniający wysokie wymagania wydajności i bezpieczeństwa.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "aukcjemulti.jmlnet",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "aukcjemulti.jmlnet",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "theme/img/217x236.png",
+      "type": "image/png",
+      "sizes": "217x236"
+    },
+    {
+      "src": "theme/img/297x297.png",
+      "type": "image/png",
+      "sizes": "297x297"
+    }
+  ]
+}

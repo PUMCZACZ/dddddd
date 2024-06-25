@@ -1,0 +1,431 @@
+.mnbox li{
+    cursor: pointer;
+}
+
+.mnbox .mn-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.mnbox .mn-content{
+    display: none;
+}
+
+.mnbox .mn-icon *{
+    width: 60%;
+}
+
+.mnbox-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: #222222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 9
+}
+
+.mnbox-container .buttons{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    height: 2rem;
+}
+
+.mnbox-container .buttons .exitButton{
+    width: 2rem;
+    cursor: pointer;
+    _opacity: 0.5;
+}
+
+.mnbox-container .buttons .exitButton img{
+    width: 100%;
+    border: 1px solid #FCFCFC;
+    border-radius: 2rem;
+    padding: 5px;
+}
+
+.mnbox-container .buttons .moreButton{
+    display: none;
+}
+
+.mnbox-container > .left,
+.mnbox-container > .right{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mnbox-container .middleContainer{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mnbox-container .display{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mnbox-container .preview{
+    height: 10%;
+    width: 100%;
+}
+
+.mnbox-container .preview ul{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.mnbox-container .preview ul li{
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.mnbox-container .preview ul .match{
+    border-color: gold;
+}
+
+.mnbox-container .left .leftBtn,
+.mnbox-container .right .rightBtn{
+    width: 30%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.3s opacity linear;
+}
+
+.mnbox-container .left .leftBtn:hover,
+.mnbox-container .right .rightBtn:hover{
+    opacity: 1;
+}
+
+.mnbox-container .left .leftBtn img,
+.mnbox-container .right .rightBtn img{
+    width: 100%;
+}
+
+.mnbox-container .left .leftBtn{
+    transform: rotate(180deg);
+}
+
+.mnbox-container .display .mn-photo{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.mnbox-container .display .mn-photo img{
+    max-width: 100%;
+    max-height: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.mnbox-container .commentsColumn{
+    width: 20%;
+    height: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.mnbox-container .commentsColumn p{
+    margin: 0;
+    padding: 0;
+}
+
+.mnbox-container .commentsColumn .comments{
+    max-height: 80%;
+    overflow-y: scroll;
+}
+
+.mnbox-container .commentContainer{
+    border-bottom: .05rem solid #222222;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mnbox-container .commentContainer .left{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    padding-right: .5rem;
+    box-sizing: border-box;
+}
+
+.mnbox-container .commentContainer .right{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.mnbox-container .commentContainer .commentHeader{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.mnbox-container .commentContainer .commentHeader .age{
+    margin-left: .5rem;
+}
+
+.mnbox-container .commentContainer .username{
+    color: orange;
+    font-weight: bold;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.mnbox-container .commentContainer .commentContent .content{
+    margin-bottom: .25rem;
+}
+
+.mnbox-container .commentContainer .date{
+    font-size: .75rem;
+    color: grey;
+}
+
+.mnbox-container .commentContainer .left .profilePhoto{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mnbox-container .commentContainer .left .profilePhoto img{
+    width: 100%;
+}
+
+.mnbox-container .commentsColumn .description{
+    height: 20%;
+    width: 100%;
+    background-color: #d0d0d0;
+}
+
+.mnbox-container .commentsColumn form{
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.mnbox-container .commentsColumn form textarea{
+    width: 80%;
+    height: 100%;
+    resize: none;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.mnbox-container .commentsColumn form button[type=submit]{
+    width: 20%;
+}
+
+.hide-comments .commentsColumn{
+    display: none;
+}
+
+.hide-comments .middleContainer{
+    width: 80%;
+}
+
+.hide-comments > .left,
+.hide-comments > .right{
+    width: 10%;
+}
+
+.hide{
+    display: none;
+}
+
+.mnbox-container .commentsColumn .user-data{
+    max-height: 20%;
+}
+
+.mnbox-container .commentsColumn .cancelBtn{
+    display: none;
+}
+
+@media (max-width: 700px){
+    .mnbox-container .commentsColumn{
+        display: none;
+    }
+
+    .mnbox-container .middleContainer{
+        width: 100%;
+    }
+
+    .mnbox-container > .right{
+        display: none;
+    }
+
+    .mnbox-container > .left > .leftBtn,
+    .mnbox-container > .right > .rightBtn{
+        opacity: 1;
+    }
+
+    .mnbox-container > .left,
+    .mnbox-container > .right{
+        display: flex;
+        position: absolute;
+        width: 20%;
+        z-index: 100;
+    }
+
+    .mnbox-container > .right{
+        right: 0;
+    }
+
+    .mnbox-container > .left{
+        left: 0;
+    }
+
+    .mnbox-container .preview{
+        display: none;
+    }
+
+    .mnbox-container .display{
+        width: 100%;
+        height: 100%;
+    }
+
+    .mnbox-container .display .mn-photo{
+        width: 100%;
+    }
+
+    .mnbox-container .display .mn-photo img{
+        max-height: 100%;
+    }
+
+    .mnbox-container .buttons{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        right: 2rem;
+        top: 4rem;
+        left: initial;
+        z-index: 150;
+    }
+
+    .mnbox-container .buttons *{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .mnbox-container .buttons .moreButton{
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .mnbox-container .buttons .moreButton img{
+        width: 100%;
+        padding: 5px;
+        border:1px solid #FCFCFC;
+        border-radius: 2rem;
+    }
+
+    .mnbox-container .mobileUserInfo{
+        width: 20rem;
+        background-color: white;
+        z-index: 150;
+        position: absolute;
+        right: 1rem;
+        top: 4rem;
+        padding: 1.5rem;
+        border-radius: .25rem;
+    }
+
+    .mnbox-container .mobileUserInfo .showCommentsBtn{
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        border-top: .1rem solid rgba(34, 34, 34, 0.349);
+        text-align: left;
+        padding: 0;
+        padding-top: .75rem;
+    }
+
+    .mnbox-container .showMobile{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        padding-top: 2rem;
+    }
+
+    .mnbox-container .showMobile .user-data{
+        display: none;
+    }
+
+    .mnbox-container .showMobile .cancelBtn{
+        width: 2rem;
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        display: block;
+    }
+
+    .mnbox-container .showMobile .cancelBtn img{
+        width: 100%;
+    }
+
+    .mnbox-container .showMobile .comments{
+        max-height: 90%;
+    }
+
+    .mnbox-container .mobileUserInfo:focus{
+        outline: none;
+    }
+
+    .mnbox-container .moreButton{
+        outline: none;
+    }
+}
