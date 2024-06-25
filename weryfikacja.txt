@@ -1,0 +1,310 @@
+11:08:36: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+11:11:16: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+11:12:07: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+11:13:19: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+11:16:26: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+11:17:30: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+11:20:19: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+11:21:27: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+11:23:20: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+11:24:11: error:err00- SELECT * FROM _payments WHERE hash='17be857f9c93e2e99afa6417ba063ff1' AND paid=0 LIMIT 11
+
+11:26:21: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+11:26:25: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+11:28:20: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+11:32:30: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+11:36:27: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+11:43:20: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+11:56:25: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+12:02:31: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+12:06:27: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+12:13:21: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+12:24:12: error:err00- SELECT * FROM _payments WHERE hash='17be857f9c93e2e99afa6417ba063ff1' AND paid=0 LIMIT 11
+
+12:55:10: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+12:56:26: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+12:58:11: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+13:02:31: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+13:03:11: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+13:06:28: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+13:13:21: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+13:18:12: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+13:48:12: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+14:48:13: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+14:54:12: error:err00- SELECT * FROM _payments WHERE hash='17be857f9c93e2e99afa6417ba063ff1' AND paid=0 LIMIT 11
+
+15:26:26: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+15:32:32: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+15:36:28: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+15:43:21: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+15:56:29: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+15:59:30: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+16:04:30: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+16:19:31: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+16:49:31: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+17:18:13: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+17:49:32: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+20:19:32: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+22:24:13: error:err00- SELECT * FROM _payments WHERE hash='17be857f9c93e2e99afa6417ba063ff1' AND paid=0 LIMIT 11
+
+22:56:27: error:err00- SELECT * FROM _payments WHERE hash='47b96671454eab742d1bd257a4ae396f' AND paid=0 LIMIT 11
+
+23:02:32: error:err00- SELECT * FROM _payments WHERE hash='ba04c5eabbea44ba05321538318c059f' AND paid=0 LIMIT 11
+
+23:06:29: error:err00- SELECT * FROM _payments WHERE hash='698842b566a79da7f05bf1dbec184895' AND paid=0 LIMIT 11
+
+23:13:22: error:err00- SELECT * FROM _payments WHERE hash='f98ffc6de812c1f4896a18b36619f2ba' AND paid=0 LIMIT 11
+
+00:48:14: error:err00- SELECT * FROM _payments WHERE hash='42bdf7a9ad4abac29b57240252aead2a' AND paid=0 LIMIT 11
+
+03:49:33: error:err00- SELECT * FROM _payments WHERE hash='4362ede1cf5d6e3a28fda2f3236e5230' AND paid=0 LIMIT 11
+
+14:59:35: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+15:02:35: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+15:04:38: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+15:07:35: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+15:07:38: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+15:12:38: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+15:14:20: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+15:17:20: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+15:22:37: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+15:22:37: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+15:27:39: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+15:37:37: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+15:52:37: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+15:57:39: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+16:07:37: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+16:52:38: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+16:57:40: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+17:07:38: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+19:22:38: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+19:27:40: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+19:37:38: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+02:52:39: error:err00- SELECT * FROM _payments WHERE hash='e23cdebd54ad6a5107d481c3939ec6e3' AND paid=0 LIMIT 11
+
+02:57:41: error:err00- SELECT * FROM _payments WHERE hash='a7b4c961fcffa670c4f921da1677f8d5' AND paid=0 LIMIT 11
+
+03:07:39: error:err00- SELECT * FROM _payments WHERE hash='708bf4a01f0df38ec65417fe742e4523' AND paid=0 LIMIT 11
+
+14:02:23: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+14:05:24: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+14:10:24: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+14:25:25: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+14:55:25: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+15:55:26: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+18:25:26: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+21:56:53: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+21:59:54: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+22:04:54: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+22:19:55: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+22:49:55: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+23:49:55: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+01:55:27: error:err00- SELECT * FROM _payments WHERE hash='a6fea2a650cbc39157c53b80d7cfb5e7' AND paid=0 LIMIT 11
+
+02:19:56: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+09:49:56: error:err00- SELECT * FROM _payments WHERE hash='3225118a3f8d73a74614271bb4fbd542' AND paid=0 LIMIT 11
+
+19:07:47: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+19:10:47: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+19:15:48: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+19:30:48: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+20:00:49: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+21:00:49: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+23:30:50: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+07:00:50: error:err00- SELECT * FROM _payments WHERE hash='b5918d34f85dee21d231afa59b713544' AND paid=0 LIMIT 11
+
+11:06:55: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+11:09:55: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+11:14:56: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+11:29:56: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+11:59:57: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+12:59:57: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+15:29:58: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+17:38:51: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+17:41:27: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+17:41:51: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+17:44:28: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+17:46:52: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+17:49:28: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+18:01:52: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+18:04:29: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+18:31:53: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+18:34:29: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+19:31:53: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+19:34:30: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+22:01:54: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+22:04:30: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+22:59:59: error:err00- SELECT * FROM _payments WHERE hash='c673fcbe18779f9844e3f072386a3144' AND paid=0 LIMIT 11
+
+05:31:54: error:err00- SELECT * FROM _payments WHERE hash='a64735065aa580c887af2b6d5d6b2f5c' AND paid=0 LIMIT 11
+
+05:34:30: error:err00- SELECT * FROM _payments WHERE hash='a8667e04ca7d797535c07daca4aa18d5' AND paid=0 LIMIT 11
+
+15:44:08: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+15:47:09: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+15:52:09: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+16:07:09: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+16:37:10: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+17:37:10: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+20:07:11: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+03:37:11: error:err00- SELECT * FROM _payments WHERE hash='8c43cc410a78d24b2ecc66a9331abda3' AND paid=0 LIMIT 11
+
+16:00:33: error:err00- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+16:03:34: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+16:06:25: error:err00- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+16:08:34: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+16:09:27: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+16:14:28: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+16:23:34: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+16:29:29: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+16:53:35: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+16:59:29: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+17:53:35: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+17:59:29: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+20:23:36: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+20:29:30: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+03:53:36: error:err054- SELECT * FROM _payments WHERE hash='432ff96c98385e6da8d1a38df839cdcb' AND paid=0 LIMIT 11
+
+03:59:30: error:err054- SELECT * FROM _payments WHERE hash='926878af71349fed03fccd44a19656bd' AND paid=0 LIMIT 11
+
+11:54:27: error:err00- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+11:57:27: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+12:02:30: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+12:17:30: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+12:47:31: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+13:47:31: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+16:17:32: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+
+23:47:32: error:err054- SELECT * FROM _payments WHERE hash='0dbe972a4131f72524782f90f4387825' AND paid=0 LIMIT 11
+

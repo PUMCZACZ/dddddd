@@ -1,0 +1,50 @@
+<Files ~ "\config.php$">
+deny from all
+</Files>
+
+RewriteEngine On
+
+Options -Indexes
+Options -MultiViews
+
+#RewriteCond %{HTTP:Accept-Language} ^([a-z]{2}) [NC]
+#RewriteRule ^$ /%1/ [L,R=301]
+
+RewriteRule .*\.(tpl)$ - [F,NC]
+
+RewriteRule ^([a-zA-Z0-9\-\_]+)$ ?chng_lang=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9\-\_]+)$ funcs.php?name=items&file=list&id=0
+
+RewriteRule ^ogloszenia/([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+)-item-([a-zA-Z0-9---_]+).html funcs.php?name=items&id=$3&title=$1&city=$2 [QSA]
+
+RewriteRule ^([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+)-item-([a-zA-Z0-9---_]+).html funcs.php?name=items&id=$3&title=$1&city=$2
+RewriteRule ^([a-zA-Z0-9---_]+)-category-([a-zA-Z0-9---_]+).html funcs.php?name=items&file=list&id=$2&title=$1
+
+RewriteRule ^firmy.html funcs.php?name=items&file=list&id=0&type=companies [QSA]
+RewriteRule ^firmy/kategoria/([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+).html funcs.php?name=items&file=list&id=$2&type=companies [QSA]
+RewriteRule ^firma/([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+).html funcs.php?name=items&file=profile&id=$3&title=$1&city=$2 [QSA]
+
+RewriteRule ^([a-zA-Z0-9---_]+)-article-([a-zA-Z0-9---_]+).html funcs.php?name=news&id=$2&title=$1
+
+RewriteRule ^([a-zA-Z0-9---_]+)-t([a-zA-Z0-9---_]+).html funcs.php?name=contents&id=$2&title=$1
+
+RewriteRule ^([a-zA-Z0-9---_]+)-aktualnosci.html funcs.php?name=aktualnosci&czytaj=$1
+RewriteRule ^aktualnosci-s([a-zA-Z0-9---_]+).html funcs.php?name=aktualnosci&s=$1
+RewriteRule ^aktualnosci.html funcs.php?name=aktualnosci
+
+RewriteRule ^index.html index.php
+
+RewriteRule ^main.html func.php
+
+RewriteRule ^test.html test.php
+
+RewriteRule ^([a-zA-Z0-9\-\_]+)$ funcs.php?name=$1 [QSA]
+RewriteRule ^([a-zA-Z0-9\-\_]+)/([a-zA-Z0-9\-\_]+)-([a-zA-Z0-9\-\_]+)$ funcs.php?name=$1&id=$3 [QSA]
+RewriteRule ^([a-zA-Z0-9\-\_]+)/([a-zA-Z0-9\-\_]+)$ funcs.php?name=$1&file=$2 [QSA]
+RewriteRule ^([a-zA-Z0-9\-\_]+)/([a-zA-Z0-9\-\_]+)/([a-zA-Z0-9---_]+)-([a-zA-Z0-9---_]+)$ funcs.php?name=$1&file=$2&title=$3&id=$4 [QSA]
+
+#RewriteCond %{HTTPS} off
+#RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
