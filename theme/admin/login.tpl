@@ -10,7 +10,7 @@
 		<div class="col-4 offset-4">
 			<!-- IF ERROR --><div class="alert alert-danger alert-main"><em class="fa fa-exclamation-circle"></em> {ERROR}</div><!-- ENDIF -->
 			<!-- IF INFO --><div class="alert alert-success alert-main"><em class="fa fa-check"></em> {INFO}</div><!-- ENDIF -->
-			<div class="card">
+			<div class="">
 				<div class="card-body">
 					<h4 class="card-title text-center">Logowanie do panelu administracyjnego</h4>
 					<form class="form-horizontal" action="{ADMIN_FILE}" method="post">

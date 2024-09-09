@@ -11,14 +11,14 @@
       </p>
       <form class="row" method="post" action="{SITEURL}/funcs.php?name=subscription">
         <div class="col-auto mx-auto">
-  				<div class="input-group">
-  					<input type="email" name="email" placeholder="Adres e-mail" class="form-control" required="required">
+          <div class="input-group">
+            <input type="email" name="email" placeholder="Adres e-mail" class="form-control border-content" required="required" style="height: unset !important">
             <div class="input-group-append">
-              <button type="submit" class="btn btn-primary">Zapis</button>
+              <button type="submit" class="btn btn-main-blue border-content">Zapisz się</button>
             </div>
-  				</div>
+          </div>
         </div>
-			</form>
+      </form>
     </div>
     <div class="row py-5">
       <div class="col-lg-3 col-6">

@@ -17,7 +17,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="form-group text-center mb-0"><button type="submit" name="add-amount" value="1" class="btn btn-main">{_LANG_799}</button></div>
+				<div class="form-group text-center mb-0"><button type="submit" name="add-amount" value="1" class="btn btn-gray">{_LANG_799}</button></div>
 			</div>
 		</form>
 	</div>

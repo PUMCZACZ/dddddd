@@ -62,18 +62,18 @@
     <div class="row">
       <!-- BEGIN c -->
       <div class="col-6">
-        <div class="category p-2<!-- IF c.ACTIVE --> active alert alert-success<!-- ENDIF -->">
+        <div class="category p-2 mb-2<!-- IF c.ACTIVE --> active alert alert-success<!-- ENDIF -->">
           <!-- IF c.ACTIVE --><i class="fas fa-thumbtack text-success mr-2"></i> <!-- ENDIF --><strong>{c.NAME}</strong>
           <!-- IF c.ACTIVE --><a title="{_LANG_440}" class="text-primary" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;delete-cat={c.ID}"><i class="fas fa-trash-alt text-danger"></i></a>
-          <!-- ELSE --><a title="{_LANG_441}" class="text-primary" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;add-cat={c.ID}"><i class="fas fa-plus-circle text-success"></i></a><!-- ENDIF -->
+          <!-- ELSE --><a title="{_LANG_441}" class="text-primary" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;add-cat={c.ID}"><i class="fas fa-plus-circle text-blue"></i></a><!-- ENDIF -->
         </div>
         <!-- IF .c.u -->
-        <ul class="list list-under">
+        <ul class="list list-under p-0">
           <!-- BEGIN u -->
-          <li class="p-2<!-- IF u.ACTIVE --> active alert alert-success<!-- ENDIF -->">
+          <li class="d-flex justify-content-between p-2 mb-2<!-- IF u.ACTIVE --> active alert alert-success<!-- ENDIF -->">
             <!-- IF u.ACTIVE --><i class="fas fa-thumbtack text-success mr-2"></i> <!-- ENDIF -->{u.NAME}
             <!-- IF u.ACTIVE --><a title="{_LANG_440}" class="text-primary mt-1" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;delete-cat={u.ID}"><i class="fas fa-trash-alt text-danger"></i></a>
-            <!-- ELSE --><a title="{_LANG_441}" class="text-primary" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;add-cat={u.ID}"><i class="fas fa-plus-circle text-success"></i></a><!-- ENDIF -->
+            <!-- ELSE --><a title="{_LANG_441}" class="text-primary" href="funcs.php?name=user&amp;file=watching&amp;op=cats&amp;add-cat={u.ID}"><i class="fas fa-plus-circle text-blue"></i></a><!-- ENDIF -->
           </li>
           <!-- END u -->
         </ul>

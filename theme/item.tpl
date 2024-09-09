@@ -22,271 +22,276 @@
 <section class="item-info mt-5">
   <div class="row">
 
-    <div class="col-md-7 offset-md-1 col-12">
+    <div class="col-lg-7 col-12">
+      <div class="p-4 shadow border-content">
+        <!-- IF PROFILE && AVATAR -->
+        <div class="text-center"><img class="mw-100" src="{AVATAR}" /></div>
 
-      <!-- IF PROFILE && AVATAR -->
-      <div class="text-center"><img class="mw-100" src="{AVATAR}" /></div>
-      <hr />
-      <!-- ENDIF -->
+        <!-- ENDIF -->
 
-      <div class="row border-bottom pb-4 gallery">
-        <div class="col-md-2 col-12 bg-light px-2 py-3 border align-middle" onclick="openModal();currentSlide(1)">
-          <!-- IF ITEM -->
-          <!-- IF .p || IMAGE_MAIN -->
-          <img class="main-pic mw-100 d-block align-middle" src="{IMAGE_MAIN}" />
-          <!-- ENDIF -->
-          <!-- ENDIF -->
-        </div>
-        <div id="myModal" class="modal item-gallery-modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
-            <!-- IF PHONE -->
-            <span class="phone-msg">
+        <div class="row pb-4 gallery">
+          <div class="col-md-2 col-12 bg-light px-2 py-3 border align-middle" onclick="openModal();currentSlide(1)">
+            <!-- IF ITEM -->
+            <!-- IF .p || IMAGE_MAIN -->
+            <img class="main-pic mw-100 d-block align-middle" src="{IMAGE_MAIN}" />
+            <!-- ENDIF -->
+            <!-- ENDIF -->
+          </div>
+          <div id="myModal" class="modal item-gallery-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <!-- IF PHONE -->
+              <span class="phone-msg">
               <em class="fa fa-phone mr-2 mb-0"></em> <span id="number2" class="text-primary align-middle" data-last="{PHONE_END}">{PHONE_START} <span class="btn btn-main align-middle btn-sm">Wyświetl numer</span><span class="phone-end"></span></span>
             </span>
-            <!-- ENDIF -->
-            <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
-            <h1 class="py-3 px-3">{TITLE}</h1>
-            <div class="mySlides">
-              <img src="{IMAGE_MAIN}" class="hover-shadow" />
-            </div>
-            <!-- BEGIN p -->
-            <div class="mySlides">
-              <img src="{p.IMAGE}" class="hover-shadow" />
-            </div>
-            <!-- END p -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-            <div class="thumbs">
+              <!-- ENDIF -->
+              <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
+              <h1 class="py-3 px-3">{TITLE}</h1>
+              <div class="mySlides">
+                <img src="{IMAGE_MAIN}" class="hover-shadow" />
+              </div>
+              <!-- BEGIN p -->
+              <div class="mySlides">
+                <img src="{p.IMAGE}" class="hover-shadow" />
+              </div>
+              <!-- END p -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              <div class="thumbs">
               <span class="column">
                 <img class="demo" src="{IMAGE_MAIN}" onclick="currentSlide(1)" alt="">
               </span>
-              <!-- BEGIN p -->
-              <span class="column">
+                <!-- BEGIN p -->
+                <span class="column">
                 <img class="demo" src="{p.IMAGE}" onclick="currentSlide({p.NO})" alt="">
               </span>
-              <!-- END p -->
+                <!-- END p -->
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-10 col-12 pl-5 mt-4">
-          <h1>{TITLE}</h1>
-          <i class="fas fa-map-marker-alt text-primary"></i>
-          <span class="text-secondary">
+          <div class="col-md-10 col-12 pl-5 mt-4">
+            <h1>{TITLE}</h1>
+            <i class="fas fa-map-marker-alt text-primary"></i>
+            <span class="text-secondary">
             <!-- IF COUNTRY -->{COUNTRY}, <!-- ENDIF -->
-            <!-- IF REGION -->{REGION}, <!-- ENDIF -->
+              <!-- IF REGION -->{REGION}, <!-- ENDIF -->
             {CITY}
             <!-- IF ADDRESS --><br />{_LANG_21} {ADDRESS}<!-- ENDIF -->
           </span>
-          <!-- IF MULTILANG -->
-          <div class="d-inline-block float-right">
-            <strong>{_LANG_30} <!-- IF ITEM --><!-- ELSE -->{_LANG_499}<!-- ENDIF --></strong>
-            <!-- BEGIN langs -->
-            <a href="{ITEM_HREF}&amp;lang={langs.NAME_DEF}">{langs.NAME}</a>
-            <!-- END langs -->
-          </div>
-          <!-- ENDIF -->
-        </div>
-      </div>
-      <!-- IF U_VERYFI -->
-      <span class="veryfi float-right text-amber mt-1">{_LANG_170}</span>
-      <!-- ENDIF -->
-
-      <!-- IF ITEM -->
-      <!-- ELSE -->
-      <div class="price-info row">
-        <div class="col-md-2 offset-md-10 col-12 watch text-center text-nowrap">
-          <a class="mt-1" href="funcs.php?name=items&amp;id={ID}&amp;watch-user=1<!-- IF FUNC_FILE == 'profile' -->&amp;file=profile<!-- ENDIF -->"><i class="far fa-address-card"></i><br />{_LANG_26}</a>
-        </div>
-      </div>
-      <!-- ENDIF -->
-
-      <!-- IF PROFILE && (SOCIAL_FB || SOCIAL_INSTA) -->
-      <div class="float-right">
-        <!-- IF SOCIAL_FB --><a target="_blank" href="{SOCIAL_FB}"><big class="fab fa-facebook text-primary mx-2" style="font-size:28px;"></big></a><!-- ENDIF -->
-        <!-- IF SOCIAL_INSTA --><a target="_blank" href="{SOCIAL_INSTA}"><big class="fab fa-instagram text-danger mx-2" style="font-size:28px;"></big></a><!-- ENDIF -->
-      </div>
-      <!-- ENDIF -->
-
-      <!-- IF FILE -->
-      <p class="text-center mt-3">
-        <a class="btn btn-primary px-5 font-weight-bold text-uppercase" href="funcs.php?name=items&amp;id={ID}&amp;get_file=1">Plik PDF</a>
-      </p>
-      <!-- ENDIF -->
-
-      <div class="item-desc my-5">
-        {ITEM_DESC}
-      </div>
-      <hr />
-      <p class="text-center">
-        <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
-      </p>
-
-      <!-- IF PROFILE -->
-      <!-- IF .up -->
-      <div class="multimedia mt-5">
-        <h6>{_LANG_32}</h6>
-        <ul class="gallery list list-inline mt-2">
-          <!-- BEGIN up -->
-          <!-- IF up.IMAGE --><li class="list-inline-item mr-3 col-2" onclick="openModal();currentSlide({up.NO})"><img class="mw-100" src="{up.IMAGE}" /></li><!-- ENDIF -->
-          <!-- END up -->
-        </ul>
-        <div id="myModal" class="modal item-gallery-modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
-            <!-- IF IS_USER && USER_ID != 1 -->
-            <a class="btn btn-main send-msg px-5 d-md-block d-none" href="#" data-toggle="modal" data-target="#msgSend">{_LANG_3}</a>
-            <!-- ELSEIF USER_ID != 1 -->
-            <a class="btn btn-main send-msg px-5 d-md-block d-none" href="funcs.php?name=items&amp;id={ID}&amp;send-msg=1">{_LANG_3}</a>
+            <!-- IF MULTILANG -->
+            <div class="d-inline-block float-right">
+              <strong>{_LANG_30} <!-- IF ITEM --><!-- ELSE -->{_LANG_499}<!-- ENDIF --></strong>
+              <!-- BEGIN langs -->
+              <a href="{ITEM_HREF}&amp;lang={langs.NAME_DEF}">{langs.NAME}</a>
+              <!-- END langs -->
+            </div>
             <!-- ENDIF -->
-            <h1 class="py-0 px-3">{TITLE}</h1>
-            <p class="py-0 px-3 pt-2 price d-md-block d-none">{PRICE} {ITEM_CURRENCY}<!-- IF UNIT --> / {UNIT}<!-- ENDIF --></p>
+          </div>
+        </div>
+        <!-- IF U_VERYFI -->
+        <span class="veryfi float-right text-amber mt-1">{_LANG_170}</span>
+        <!-- ENDIF -->
+
+        <!-- IF ITEM -->
+        <!-- ELSE -->
+        <div class="price-info row">
+          <div class="col-md-2 offset-md-10 col-12 watch text-center text-nowrap">
+            <a class="mt-1" href="funcs.php?name=items&amp;id={ID}&amp;watch-user=1<!-- IF FUNC_FILE == 'profile' -->&amp;file=profile<!-- ENDIF -->"><i class="far fa-address-card"></i><br />{_LANG_26}</a>
+          </div>
+        </div>
+        <!-- ENDIF -->
+
+        <!-- IF PROFILE && (SOCIAL_FB || SOCIAL_INSTA) -->
+        <div class="float-right">
+          <!-- IF SOCIAL_FB --><a target="_blank" href="{SOCIAL_FB}"><big class="fab fa-facebook text-primary mx-2" style="font-size:28px;"></big></a><!-- ENDIF -->
+          <!-- IF SOCIAL_INSTA --><a target="_blank" href="{SOCIAL_INSTA}"><big class="fab fa-instagram text-danger mx-2" style="font-size:28px;"></big></a><!-- ENDIF -->
+        </div>
+        <!-- ENDIF -->
+
+        <!-- IF FILE -->
+        <p class="text-center mt-3">
+          <a class="btn btn-primary px-5 font-weight-bold text-uppercase" href="funcs.php?name=items&amp;id={ID}&amp;get_file=1">Plik PDF</a>
+        </p>
+        <!-- ENDIF -->
+
+        <div class="item-desc my-5">
+          {ITEM_DESC}
+        </div>
+
+        <p class="text-center">
+          <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
+        </p>
+
+        <!-- IF PROFILE -->
+        <!-- IF .up -->
+        <div class="multimedia mt-5 shadow border-">
+          <h6>{_LANG_32}</h6>
+          <ul class="gallery list list-inline mt-2">
             <!-- BEGIN up -->
-            <div class="mySlides">
-              <img src="{up.IMAGE}" class="hover-shadow" />
-            </div>
+            <!-- IF up.IMAGE --><li class="list-inline-item mr-3 col-2" onclick="openModal();currentSlide({up.NO})"><img class="mw-100" src="{up.IMAGE}" /></li><!-- ENDIF -->
             <!-- END up -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-            <div class="thumbs">
+          </ul>
+          <div id="myModal" class="modal item-gallery-modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+              <!-- IF IS_USER && USER_ID != 1 -->
+              <a class="btn btn-main send-msg px-5 d-md-block d-none" href="#" data-toggle="modal" data-target="#msgSend">{_LANG_3}</a>
+              <!-- ELSEIF USER_ID != 1 -->
+              <a class="btn btn-main send-msg px-5 d-md-block d-none" href="funcs.php?name=items&amp;id={ID}&amp;send-msg=1">{_LANG_3}</a>
+              <!-- ENDIF -->
+              <h1 class="py-0 px-3">{TITLE}</h1>
+              <p class="py-0 px-3 pt-2 price d-md-block d-none">{PRICE} {ITEM_CURRENCY}<!-- IF UNIT --> / {UNIT}<!-- ENDIF --></p>
               <!-- BEGIN up -->
-              <span class="column">
+              <div class="mySlides">
+                <img src="{up.IMAGE}" class="hover-shadow" />
+              </div>
+              <!-- END up -->
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+              <div class="thumbs">
+                <!-- BEGIN up -->
+                <span class="column">
                 <img class="demo" src="{up.IMAGE}" onclick="currentSlide({up.NO})" alt="">
               </span>
-              <!-- END up -->
+                <!-- END up -->
+              </div>
             </div>
           </div>
         </div>
+        <!-- ENDIF -->
+        <div class="multimedia mt-5">
+          <h6>{_LANG_34}</h6>
+          <!-- INCLUDE tpl_items_list.tpl -->
+        </div>
+        <!-- IF PAGER -->
+        <nav aria-label="navigation" class="float-right">
+          <ul class="pagination">
+            {PAGER}
+          </ul>
+        </nav>
+        <!-- ENDIF -->
+        <!-- ENDIF -->
       </div>
-      <!-- ENDIF -->
-      <div class="multimedia mt-5">
-        <h6>{_LANG_34}</h6>
-        <!-- INCLUDE tpl_items_list.tpl -->
-      </div>
-      <!-- IF PAGER -->
-      <nav aria-label="navigation" class="float-right">
-        <ul class="pagination">
-          {PAGER}
-        </ul>
-      </nav>
-      <!-- ENDIF -->
-      <!-- ENDIF -->
-
     </div>
 
-    <div class="col-md-3">
-      <!-- IF ITEM -->
-      <h4 class="text-capitalize mb-4">{_LANG_118}</h4>
-      <div class="card mb-3">
-        <div class="card-body item-info-box">
-          <div class="row">
-            <div class="col-3 text-center"><i class="far fa-calendar-alt text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_537}</h5>
-              <span class="text-secondary">{FROM_START}</span>
+    <div class="col-lg-5 col-xl-4 offset-xl-1 ">
+      <div class="shadow border-content">
+        <!-- IF ITEM -->
+        <h4 class="text-capitalize text-center my-4">{_LANG_118}</h4>
+        <div class="mb-3">
+          <div class="card-body item-info-box">
+            <div class="row">
+              <div class="col-3 text-center"><i class="far fa-calendar-alt text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_537}</h5>
+                <span class="text-secondary">{FROM_START}</span>
+              </div>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="far fa-money-bill-alt text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_29}</h5>
-              <span class="text-secondary"><!-- IF PRICE > 0 -->{PRICE} {ITEM_CURRENCY}<!-- IF UNIT --> / {UNIT}<!-- ENDIF --><!-- ELSE -->{_LANG_512}<!-- ENDIF --></span>
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="fas fa-map-marker-alt text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_20}</h5>
+                <span class="text-secondary">
+                  <!-- IF COUNTRY -->{COUNTRY}, <!-- ENDIF -->
+                  <!-- IF REGION -->{REGION}, <!-- ENDIF -->
+                  {CITY}
+                  <!-- IF ADDRESS --><br />{_LANG_21} {ADDRESS}<!-- ENDIF -->
+                </span>
+              </div>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="fas fa-map-marker-alt text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_20}</h5>
-              <span class="text-secondary">
-                <!-- IF COUNTRY -->{COUNTRY}, <!-- ENDIF -->
-                <!-- IF REGION -->{REGION}, <!-- ENDIF -->
-                {CITY}
-                <!-- IF ADDRESS --><br />{_LANG_21} {ADDRESS}<!-- ENDIF -->
-              </span>
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="far fa-money-bill-alt text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_29}</h5>
+                <span class="text-secondary"><!-- IF PRICE > 0 -->{PRICE} {ITEM_CURRENCY}<!-- IF UNIT --> / {UNIT}<!-- ENDIF --><!-- ELSE -->{_LANG_512}<!-- ENDIF --></span>
+              </div>
             </div>
-          </div>
-          <!-- IF ACTIVE -->
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="far fa-address-card text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_26}</h5>
-              <a class="text-secondary" href="funcs.php?name=items&amp;id={ID}&amp;watch=1">{_LANG_26}</a>
+            <!-- IF ACTIVE -->
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="far fa-address-card text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_26}</h5>
+                <a class="text-secondary" href="funcs.php?name=items&amp;id={ID}&amp;watch=1">{_LANG_26}</a>
+              </div>
             </div>
-          </div>
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="fa fa-user text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0"><!-- IF PROFILE -->{_LANG_97}<!-- ELSE -->{_LANG_528}<!-- ENDIF --></h5>
-              <a class="my-3 d-block text-info" title="{_LANG_591}" href="funcs.php?name=items&amp;file=list&amp;user_id={USER_ID}&amp;id=0&amp;search=1&amp;end=1"><!-- IF USERNAME -->{USERNAME}<!-- ELSE -->{USER_EMAIL_HIDDEN}<!-- ENDIF --> <i class="ml-1 fas fa-search"></i></a>
-              <!-- IF PHONE -->
-              <div class="text-secondary"><em class="fa fa-phone mr-2 mb-0"></em> <span id="number" class="text-primary align-middle" data-last="{PHONE_END}">{PHONE_START} <span class="btn btn-main align-middle btn-sm">Wyświetl numer</span><span class="phone-end"></span></span></div>
-              <!-- ENDIF -->
-              <!-- IF IS_USER -->
-              <a class="btn btn-primary btn-sm send-msg px-4 mt-3" href="#" data-toggle="modal" data-target="#msgSend">{_LANG_3}</a>
-              <!-- ELSE -->
-              <a class="btn btn-primary btn-sm send-msg px-4 mt-3" href="funcs.php?name=items<!-- IF FUNC_FILE == 'profile' -->&amp;file=profile<!-- ENDIF -->&amp;id={ID}&amp;send-msg=1">{_LANG_3}</a>
-              <!-- ENDIF -->
-            </div>
-          </div>
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="fa fa-user text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0"><!-- IF PROFILE -->{_LANG_97}<!-- ELSE -->{_LANG_528}<!-- ENDIF --></h5>
+                <a class="my-3 d-block text-info" title="{_LANG_591}" href="funcs.php?name=items&amp;file=list&amp;user_id={USER_ID}&amp;id=0&amp;search=1&amp;end=1"><!-- IF USERNAME -->{USERNAME}<!-- ELSE -->{USER_EMAIL_HIDDEN}<!-- ENDIF --> <i class="ml-1 fas fa-search"></i></a>
+                <!-- IF PHONE -->
+                <div class="text-secondary">
+                  <a href="number:{PHONE}" id="number" class="text-primary align-middle">{PHONE}</a>
+                </div>
+                <!-- ENDIF -->
+              </div>
+              <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center flex-wrap">
+                  <!-- IF IS_USER -->
+                  <a class="btn btn-application btn-sm send-msg px-4 mt-3 mr-1 border-content" href="#" data-toggle="modal" data-target="#msgSend">{_LANG_3}</a>
+                  <!-- ELSE -->
+                  <a class="btn btn-application btn-sm send-msg px-4 mt-3 mb-3 mr-1 border-content" href="funcs.php?name=items<!-- IF FUNC_FILE == 'profile' -->&amp;file=profile<!-- ENDIF -->&amp;id={ID}&amp;send-msg=1">{_LANG_3}</a>
+                  <!-- ENDIF -->
 
-          <!-- IF PROFILE -->
-          <!-- IF SHOW_PHONE && .phones -->
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="fa fa-phone text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_15}</h5>
-              <!-- BEGIN phones -->
-              <div class="ml-4 text-secondary">{phones.NUMBER}</div>
-              <!-- END phones -->
-            </div>
-          </div>
-          <!-- ENDIF -->
-          <!-- IF SHOW_WEBSITE && .websites -->
-          <div class="row mt-4">
-            <div class="col-3 text-center"><i class="fa fa-globe text-info"></i></div>
-            <div class="col-9">
-              <h5 class="m-0">{_LANG_18}</h5>
-              <!-- BEGIN websites --><div class="ml-4 text-secondary">{websites.WEBSITE}</div><!-- END websites -->
-            </div>
-          </div>
-          <!-- ENDIF -->
-          <!-- ENDIF -->
+                  <!-- IF ITEM -->
+                  <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase border-content" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
+                  <!-- ENDIF -->
+                </div>
 
-          <!-- IF ITEM -->
-          <hr class="my-4" />
-          <p class="text-center mb-0">
-            <a href="#" class="btn btn-primary px-5 font-weight-bold text-uppercase" data-toggle="modal" data-target="#msgSendApp">Aplikuj</a>
-          </p>
-          <!-- ENDIF -->
+              </div>
+            </div>
 
-          <!-- ENDIF -->
+            <!-- IF PROFILE -->
+            <!-- IF SHOW_PHONE && .phones -->
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="fa fa-phone text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_15}</h5>
+                <!-- BEGIN phones -->
+                <div class="ml-4 text-secondary">{phones.NUMBER}</div>
+                <!-- END phones -->
+              </div>
+            </div>
+            <!-- ENDIF -->
+            <!-- IF SHOW_WEBSITE && .websites -->
+            <div class="row mt-4">
+              <div class="col-3 text-center"><i class="fa fa-globe text-info"></i></div>
+              <div class="col-9">
+                <h5 class="m-0">{_LANG_18}</h5>
+                <!-- BEGIN websites --><div class="ml-4 text-secondary ">{websites.WEBSITE}</div><!-- END websites -->
+              </div>
+            </div>
+            <!-- ENDIF -->
+            <!-- ENDIF -->
+
+            <!-- ENDIF -->
+          </div>
+        </div>
+        <!-- ENDIF -->
+
+        <div class="text-center my-3">
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- ogloszenie.online - 1 -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-9060310957910876"
+               data-ad-slot="3004274423"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
         </div>
       </div>
-      <!-- ENDIF -->
-      <div class="map mt-5" id="map">
+      <div class="map mt-5 border-content shadow p-3" id="map">
         <iframe width="100%" height="250" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen src="https://maps.google.com/maps?f=q&source=s_q&hl=pl&geocode=&q={COUNTRY}+{CITY}+{ADDRESS}&ie=UTF8<!-- IF USER_MEMBER -->&hq={CITY}&hnear={CITY}<!-- ENDIF -->&z=11&iwloc=A&output=embed"></iframe>
       </div>
-
-      <div class="text-center my-3">
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- ogloszenie.online - 1 -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-9060310957910876"
-             data-ad-slot="3004274423"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-
     </div>
 
   </div>

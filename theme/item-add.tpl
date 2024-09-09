@@ -1,13 +1,13 @@
 <!-- INCLUDE theme_header.tpl -->
-<main class="item-add row">
+<main class="item-add row mt-5">
   <form method="post" name="form" enctype="multipart/form-data"  onsubmit="return checkPrice()" id="item-add" class="col-md-10 offset-md-1 col-12">
-    <div class="card">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_50}</span>
+    <div class="">
+      <div class="step">
+        <span>{_LANG_50}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="row form-group">
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-8 col-12 mb-2">
             <label>{_LANG_51} <span class="font-weight-bold text-danger">*</span></label>
             <div class="input-group">
               <!-- IF MULTILANG -->
@@ -24,7 +24,9 @@
               <!-- ENDIF -->
             </div>
           </div>
-          <div class="col-lg-4 col-12">
+        </div>
+        <div class="row from-group">
+          <div class="col-lg-5 col-12">
             <label>{_LANG_53} <span class="font-weight-bold text-danger">*</span></label>
             <div class="cats-select">
               <!-- IF .sc -->
@@ -34,31 +36,31 @@
                 <!-- BEGIN c -->
                 <option value="{c.ID}"<!-- IF c.ACTIVE --> selected<!-- ENDIF -->>{c.NAME}</option>
                 <!-- END c -->
-            	</select>
+              </select>
               <!-- END sc -->
               <!-- ELSE -->
-            	<select name="cat_id[]" class="form-control parent" required>
+              <select name="cat_id[]" class="form-control parent" required>
                 <option value="" disabled selected>{_LANG_446}</option>
                 <!-- BEGIN c -->
                 <option value="{c.ID}"<!-- IF CAT_ID == c.ID --> selected<!-- ENDIF -->>{c.NAME}</option>
                 <!-- END c -->
-            	</select>
+              </select>
               <!-- ENDIF -->
-            	<div class="clear"></div>
+              <div class="clear"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- IF .par || .item_type -->
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">Szczegóły oferty</span>
+    <div class=" mt-3">
+      <div class=" step">
+        <span>Szczegóły oferty</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="row">
           <!-- IF .item_type -->
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-4 col-lg-6 col-12">
             <label class="d-block">{_LANG_578} <span class="font-weight-bold text-danger">*</span></label>
             <select name="type" class="form-control" required>
               <option value="">-- wybierz --</option>
@@ -69,7 +71,7 @@
           </div>
           <!-- ENDIF -->
           <!-- BEGIN par -->
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-lg-6 col-12">
             <label class="d-block">{par.NAME}<!-- IF par.REQUIRED --> <span class="font-weight-bold text-danger">*</span><!-- ENDIF --></label>
             <!-- IF par.TYPE == 't' -->
             <input type="text" name="par_{par.F_ID}" value="{par.VALUE}" class="form-control"<!-- IF par.REQUIRED --> required<!-- ENDIF --> />
@@ -111,11 +113,8 @@
       </div>
     </div>
     <!-- ENDIF -->
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_57}</span>
-      </div>
-      <div class="card-body">
+    <div class=" mt-3">
+      <div class="">
         <div class="form-group">
           <!-- IF .p -->
           <label>{_LANG_58}</label>
@@ -129,7 +128,7 @@
           </ul>
           <!-- ELSE -->
           <div class="row mb-2">
-            <div class="col-auto">
+            <div class="col-12 col-lg-5">
               <label>{_LANG_595}</label>
               <input type="file" id="files" name="photo[]" accept="image/*" class="form-control" onchange="updatepicture();this.form.submit()"<!-- IF PHOTO-LIMIT--> disabled<!-- ENDIF --> multiple />
             </div>
@@ -150,7 +149,7 @@
               </div>
             </div>
             <!-- ELSE -->
-            <div class="col-auto">
+            <div class="col-12 col-lg-5">
               <label>{_LANG_596}</label>
               <input type="file" name="item_file" accept="application/pdf" class="form-control" onchange="updatepicture();this.form.submit()"<!-- IF PHOTO-LIMIT--> disabled<!-- ENDIF --> multiple />
             </div>
@@ -159,44 +158,38 @@
         </div>
       </div>
     </div>
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_240}</span>
+    <div class=" mt-3">
+      <div class="step mb-3">
+        <span>{_LANG_240}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="row">
-          <div class="col-auto form-group">
+          <div class="col-12 col-lg-5 form-group">
             <label>{_LANG_328} <span class="font-weight-bold text-danger">*</span></label>
             <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">@</span>
-              </div>
               <input type="email" name="user_email" value="{USER_EMAIL}" required class="form-control" />
             </div>
           </div>
-          <div class="col-auto">
+          <div class="col-12 col-lg-5">
             <label>{_LANG_15} <span class="font-weight-bold text-danger">*</span></label>
             <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-phone"></i></span>
-              </div>
               <input type="text" name="phone" value="{PHONE}" class="form-control" required />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_59}</span>
+    <div class=" mt-3">
+      <div class="step mb-3">
+        <span>{_LANG_59}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="row form-group">
-          <div class="col-lg-3 col-md-6 col-6">
+          <div class="col-lg-4 col-12">
             <label>{_LANG_59} <span class="font-weight-bold text-danger">*</span></label>
             <input type="number" name="price" step="any" min="0" value="{PRICE}" class="form-control text-right" />
           </div>
-          <div class="col-lg-2 col-md-6 col-6">
+          <div class="col-lg-4 col-12">
             <label>{_LANG_60} <span class="font-weight-bold text-danger">*</span></label>
             <select name="item_currency" class="form-control" required>
               <!-- BEGIN waluta -->
@@ -221,11 +214,11 @@
       </div>
     </div>
 
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_72}</span>
+    <div class=" mt-3">
+      <div class="step mb-3">
+        <span>{_LANG_72}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <!-- IF MULTILANG -->
         <div class="row mb-4">
           <div class="col-lg-4 col-md-12 col-12">
@@ -265,14 +258,14 @@
       </div>
     </div>
 
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_20}</span>
+    <div class=" mt-3">
+      <div class="step mb-3">
+        <span>{_LANG_20}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="row form-group">
           <!-- IF MULTILANG -->
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-12 mb-2">
             <label>{_LANG_237} <span class="font-weight-bold text-danger">*</span></label>
             <select name="country" class="form-control" required>
               <option value="">{_LANG_446}</option>
@@ -283,7 +276,7 @@
           </div>
           <!-- ENDIF -->
           <!-- IF .region -->
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-12 mb-2">
             <label>{_LANG_579} <span class="font-weight-bold text-danger">*</span></label>
             <select name="region" class="form-control" required>
               <option value="" disabled selected>{_LANG_446}</option>
@@ -293,28 +286,25 @@
             </select>
           </div>
           <!-- ENDIF -->
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-lg-3 col-12 mb-2">
             <label>{_LANG_232} <span class="font-weight-bold text-danger">*</span></label>
             <input type="text" name="city" value="{CITY}" class="form-control" required />
           </div>
-          <div class="col-lg-2 col-md-6 col-8">
+          <div class="col-lg-3 col-12 mb-2">
+            <label>{_LANG_234}<span class="font-weight-bold text-danger">*</span></label>
+            <input type="text" name="address" value="{ADDRESS}" class="form-control" />
+          </div>
+          <div class="col-lg-3 col-12 mb-2">
             <label>{_LANG_233} <span class="font-weight-bold text-danger">*</span></label>
             <input type="text" name="post_code" value="{POST_CODE}" class="form-control" required />
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <label>{_LANG_234}</label>
-            <input type="text" name="address" value="{ADDRESS}" class="form-control" />
           </div>
         </div>
       </div>
     </div>
 
     <!-- IF ITEMS_KEYWORDS -->
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_79} <a target="_blank" href="{CONTENT_HREF_21}">{CONTENT_NAME_21}</a></span>
-      </div>
-      <div class="card-body">
+    <div class=" mt-3">
+      <div class="">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-12">
             <div class="form-group">
@@ -338,11 +328,11 @@
     <!-- ENDIF -->
 
     <!-- IF ITEMS_VIDEOS -->
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_85}</span>
+    <div class="mt-3">
+      <div class="step mb-3">
+        <span>{_LANG_85}</span>
       </div>
-      <div class="card-body">
+      <div class="">
         <div class="form-group row">
           <div class="col-md-4 col-12 form-group">
             <label>{_LANG_86}</label>
@@ -365,22 +355,26 @@
     <!-- ENDIF -->
 
     <!-- IF ITEM-EDIT == '' -->
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_65}</span>
+    <div class="mt-3">
+      <div class="step mb-3">
+        <span class="mb-3">Czas publikacji</span>
       </div>
-      <div class="card-body">
         <div class="form-inline">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="far fa-clock"></i></span>
+          <!-- BEGIN item_time -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0 px-2 py-0">
+            <div class="card rounded p-3">
+              <div class="d-flex justify-content-center align-items-center h3 font-weight-bold">
+                <i class="far fa-clock mr-3"></i>
+                {item_time.NAME} {_LANG_489}
+              </div>
+              <div>
+                <p class="font-weight-bold">{item_time.PRICE} {CURRENCY}</p>
+                <input type="radio" class="rounded-checkbox" name="item_time" value="{item_time.NAME}">
+                Wybierz opcje
+              </div>
             </div>
-            <select class="form-control text-center" name="item_time" onChange="promoPrice(this.value);">
-              <!-- BEGIN item_time -->
-              <option value="{item_time.NAME}"<!-- IF ITEM_TIME == item_time.NAME --> selected<!-- ENDIF -->>{item_time.NAME} {_LANG_489}<!-- IF USER_MEMBER == '' --> ({item_time.PRICE} {CURRENCY})<!-- ENDIF --></option>
-              <!-- END item_time -->
-            </select>
           </div>
+          <!-- END item_time -->
           <div class="col-md-9 col-12 pt-2">
             <!-- IF ITEM_MEMBER -->
             <!-- IF USER_MEMBER -->
@@ -395,20 +389,36 @@
     </div>
     <!-- ENDIF -->
 
-    <div class="card mt-3">
-      <div class="card-header step">
-        {_LANG_49}<span class="title">{_LANG_515}</span>
+    <div class="mt-3">
+      <div class="step">
+        <span>{_LANG_515}</span>
       </div>
-      <div class="card-body">
+      <div class="mt-3">
         <div class="row">
           <div class="col-12">
             <ul class="row promo-list list-unstyled my-md-5" id="promo-list">
-              <li class="col-lg-3 col-md-6 col-12 text-center px-2 mb-md-0 mb-3">
+              <li class="col-lg-3 col-sm-6 col-12 px-2 mb-md-0 mb-3">
                 <input type="checkbox" class="promo" name="promo_bold" value="1"<!-- IF PROMO_BOLD == 1 --> checked<!-- ENDIF --> onChange="updateAddPrice(this.name);" id="promo-b" />
-                <label for="promo-b" class="box p-3 align-top">
-                  <p class="icon"><i class="fas fa-bold"></i></p>
-                  <h6 class="my-3"><strong>{NAME_PROMO_BOLD}</strong></h6>
-                  <div class="info mt-4 mb-0">
+                <label for="promo-b" class="box p-3 align-top w-100 h-100">
+                  <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="d-flex flex-col flex-sm-column align-items-center align-items-sm-start">
+                      <p class="icon mr-4"><i class="fas fa-bold"></i></p>
+                      <h6 class="my-3"><strong>{NAME_PROMO_BOLD}</strong></h6>
+                    </div>
+                    <div class="mobile-show d-flex flex-column">
+                      <div class="d-flex flex-column">
+                        <span class="mr-2">{_LANG_518}</span>
+                        <!-- BEGIN promo_bold -->
+                        <span data-value="{promo_bold.EXTRA}" data-price="{promo_bold.VALUE_FROM}" class="<!-- IF promo_bold.SELECTED -->active d-inline<!-- ELSE -->d-none<!-- ENDIF -->">{promo_bold.VALUE_FROM}</span>
+                        <!-- END promo_bold -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile-show">
+                    <p>{TEXT_PROMO_BOLD}</p>
+                    <div class="select">{_LANG_582}</div>
+                  </div>
+                  <div class="desktop-show info mt-2 mb-0">
                     <p>{TEXT_PROMO_BOLD}</p>
                     <big class="d-block my-3">
                       {_LANG_518}
@@ -421,15 +431,29 @@
                   </div>
                 </label>
               </li>
-              <li class="col-lg-3 col-md-6 col-12 text-center px-2 mb-md-0 mb-3">
+              <li class="col-lg-3 col-sm-6 col-12 px-2 mb-md-0 mb-3">
                 <input type="checkbox" class="promo" name="promo_backlight" value="1"<!-- IF PROMO_BACKLIGHT == 1 --> checked<!-- ENDIF --> onChange="updateAddPrice(this.name);" id="promo-bck" />
-                <label for="promo-bck" class="box p-3 align-top">
-                  <p class="icon"><i class="fas fa-highlighter"></i></p>
-                  <h6 class="my-3"><strong>{NAME_PROMO_BACKLIGHT}</strong></h6>
-                  <div class="info mt-4 mb-0">
+                <label for="promo-bck" class="box p-3 align-top w-100 h-100">
+                  <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start">
+                      <p class="icon mr-4"><i class="fas fa-highlighter"></i></p>
+                      <h6 class="my-3"><strong>{NAME_PROMO_BACKLIGHT}</strong></h6>
+                    </div>
+                    <div class="mobile-show d-flex flex-column">
+                      {_LANG_518}
+                      <!-- BEGIN promo_backlight -->
+                      <span data-value="{promo_backlight.EXTRA}" data-price="{promo_backlight.VALUE_FROM}" class="<!-- IF promo_backlight.SELECTED -->active d-inline<!-- ELSE -->d-none<!-- ENDIF -->">{promo_backlight.VALUE_FROM}</span>
+                      <!-- END promo_backlight -->
+                    </div>
+                  </div>
+                  <div class="mobile-show">
+                    <p>{TEXT_PROMO_BACKLIGHT}</p>
+                    <div class="select">{_LANG_582}</div>
+                  </div>
+
+                  <div class="desktop-show info mt-2 mb-0">
                     <p>{TEXT_PROMO_BACKLIGHT}</p>
                     <big class="d-block my-3">
-                      {_LANG_518}
                       <!-- BEGIN promo_backlight -->
                       <span data-value="{promo_backlight.EXTRA}" data-price="{promo_backlight.VALUE_FROM}" class="<!-- IF promo_backlight.SELECTED -->active d-inline<!-- ELSE -->d-none<!-- ENDIF -->">{promo_backlight.VALUE_FROM}</span>
                       <!-- END promo_backlight -->
@@ -439,12 +463,26 @@
                   </div>
                 </label>
               </li>
-              <li class="col-lg-3 col-md-6 col-12 text-center px-2 mb-md-0 mb-3">
+              <li class="col-lg-3 col-sm-6 col-12 px-2 mb-md-0 mb-3">
                 <input type="checkbox" class="promo" name="promo_distinction" value="1"<!-- IF PROMO_DISTINCTION == 1 --> checked<!-- ENDIF --> onChange="updateAddPrice(this.name);" id="promo-d" />
-                <label for="promo-d" class="box p-3 align-top">
-                  <p class="icon"><i class="fas fa-star"></i></p>
-                  <h6 class="my-3"><strong>{NAME_PROMO_DISTINCTION}</strong></h6>
-                  <div class="info mt-4 mb-0">
+                <label for="promo-d" class="box p-3 align-top w-100 h-100">
+                  <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start">
+                      <p class="icon mr-4"><i class="fas fa-star"></i></p>
+                      <h6 class="my-3"><strong>{NAME_PROMO_DISTINCTION}</strong></h6>
+                    </div>
+                    <div class="mobile-show d-flex flex-column">
+                      {_LANG_518}
+                      <!-- BEGIN promo_distinction -->
+                      <span data-value="{promo_distinction.EXTRA}" data-price="{promo_distinction.VALUE_FROM}" class="<!-- IF promo_distinction.SELECTED -->active d-inline<!-- ELSE -->d-none<!-- ENDIF -->">{promo_distinction.VALUE_FROM}</span>
+                      <!-- END promo_distinction -->
+                    </div>
+                  </div>
+                  <div class="mobile-show">
+                    <p>{TEXT_PROMO_DISTINCTION}</p>
+                    <div class="select">{_LANG_582}</div>
+                  </div>
+                  <div class="desktop-show info mt-2 mb-0">
                     <p>{TEXT_PROMO_DISTINCTION}</p>
                     <big class="d-block my-3">
                       {_LANG_518}
@@ -457,12 +495,26 @@
                   </div>
                 </label>
               </li>
-              <li class="col-lg-3 col-md-6 col-12 text-center px-2 mb-md-0 mb-3">
+              <li class="col-lg-3 col-sm-6 col-12 px-2 mb-md-0 mb-3">
                 <input type="checkbox" class="promo" name="promo_mainpage" value="1"<!-- IF PROMO_MAINPAGE == 1 --> checked<!-- ENDIF --> onChange="updateAddPrice(this.name);" id="promo-mp" />
-                <label for="promo-mp" class="box p-3 align-top">
-                  <p class="icon"><i class="fas fa-home"></i></p>
-                  <h6 class="my-3"><strong>{NAME_PROMO_MAINPAGE}</strong></h6>
-                  <div class="info mt-4 mb-0">
+                <label for="promo-mp" class="box p-3 align-top w-100 h-100">
+                  <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="d-flex flex-row flex-sm-column align-items-center align-items-sm-start">
+                      <p class="icon"><i class="fas fa-home"></i></p>
+                      <h6 class="my-3"><strong>{NAME_PROMO_MAINPAGE}</strong></h6>
+                    </div>
+                    <div class="mobile-show d-flex flex-column">
+                      {_LANG_518}
+                      <!-- BEGIN promo_mainpage -->
+                      <span data-value="{promo_mainpage.EXTRA}" data-price="{promo_mainpage.VALUE_FROM}" class="<!-- IF promo_mainpage.SELECTED -->active d-inline<!-- ELSE -->d-none<!-- ENDIF -->">{promo_mainpage.VALUE_FROM}</span>
+                      <!-- END promo_mainpage -->
+                    </div>
+                  </div>
+                  <div class="mobile-show">
+                    <p>{TEXT_PROMO_MAINPAGE}</p>
+                    <div class="select">{_LANG_582}</div>
+                  </div>
+                  <div class="desktop-show info mt-2 mb-0">
                     <p>{TEXT_PROMO_MAINPAGE}</p>
                     <big class="d-block my-3">
                       {_LANG_518}
@@ -479,7 +531,7 @@
           </div>
         </div>
       </div>
-      <div class="card-footer text-right">
+      <div class="footer">
 
         <div class="form-check my-2">
           <input type="checkbox" name="rules" value="1" id="rules" required<!-- IF RULES == 1 --> checked<!-- ENDIF --> />
@@ -495,15 +547,15 @@
         </div>
 
         <!-- IF IS_USER == '' -->
-        <div class="text-right mb-2"><!-- INCLUDE tpl_recaptcha.tpl --></div>
+        <div class="mb-2"><!-- INCLUDE tpl_recaptcha.tpl --></div>
         <!-- ENDIF -->
 
         <!-- IF ITEM-EDIT -->
         <input type="hidden" name="edit" value="1" />
         <input type="hidden" name="id" value="{ID}" />
-        <button type="submit" name="save" value="1" class="btn btn-main px-5">{_LANG_90}</button>
+        <button type="submit" name="save" value="1" class="btn btn-primary border-content">{_LANG_90}</button>
         <!-- ELSE -->
-        <button type="submit" name="add" value="1" class="btn btn-main pl-5 pr-5"><em class="fa fa-plus mr-3"></em> {_LANG_91}</button>
+        <button type="submit" name="add" value="1" class="btn btn-primary border-content"><em class="fa fa-plus mr-3"></em> {_LANG_91}</button>
         <!-- ENDIF -->
 
       </div>

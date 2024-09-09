@@ -1,7 +1,7 @@
 <!-- INCLUDE tpl_user_open.tpl -->
 <h3>Moje subskrypcje</h3>
 <!-- IF .s -->
-<table class="table table-striped table-hover">
+<table class="table table-subscription">
 	<tr>
 		<th>Kategoria:</th>
 		<th class="text-center">Usuń</th>
@@ -12,7 +12,7 @@
 			{s.NAME}
 		</td>
 		<td class="text-center">
-			<a href="funcs.php?name=user&amp;file=subscriptions&amp;del={s.ID}" title="Usuń" data-toggle="tooltip" data-placement="right" class="text-danger" onclick="return confirm('Na pewno usunąć subskrypcję?');">
+			<a href="funcs.php?name=user&amp;file=subscriptions&amp;del={s.ID}" title="Usuń" data-toggle="tooltip" data-placement="right" onclick="return confirm('Na pewno usunąć subskrypcję?');">
 				<em class="fa fa-trash"></em>
 			</a>
 		</td>

@@ -1,15 +1,32 @@
 <!-- INCLUDE theme_header.tpl -->
-<section class="main-sec row mt-3">
-
-  <form method="get" action="funcs.php" class="search-bar search-bar-items bg-light border col-md-10 offset-md-1 p-4 mb-4">
+<div class="header-background"></div>
+<section class="main-sec row mt-3 ">
+  <form method="get" action="funcs.php"
+        class="search-bar search-bar-items shadow border-content col-md-10 offset-md-1 p-4 mb-4 bg-white">
+    <div class="row">
+      <div class="col-12 text-center">
+        <!-- IF VIEW == 'name=items&file=list' -->
+        <h1 class="mb-2">Oferty pracy</h1>
+        <p>Odkryj najlepsze oferty pracy w branży medycznej!</p>
+        <!-- ELSE -->
+        <h1 class="mb-2">Lista pracodawców</h1>
+        <p>Aplikuj o pracę do swojego przyszłego pracodawcy!</p>
+        <!-- ENDIF -->
+      </div>
+    </div>
     <input type="hidden" name="name" value="items" />
     <input type="hidden" name="file" value="list" />
-    <div class="row">
-      <div class="col-md-6 col-12 mb-3">
-        <input class="form-control" type="text" name="string" value="{STRING}" placeholder="{_LANG_119}" />
+    <div class="row align-items-center justify-content-center">
+      <div class="col-lg-4 col-12 mb-2 mb-md-0">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white" style="border-right: 0"><i class="fas fa-lg fa-search"></i></span>
+          </div>
+          <input class="form-control" type="text" name="string" value="{STRING}" placeholder="{_LANG_119}" style="border-left: 0" />
+        </div>
       </div>
       <!-- IF MULTILANG -->
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-lg-2 col-6">
         <select class="form-control" name="country" onchange="this.form.submit()">
           <option value="">{_LANG_95}</option>
           <!-- BEGIN kraj -->
@@ -19,7 +36,7 @@
       </div>
       <!-- ENDIF -->
       <!-- IF .region -->
-      <div class="col-md-3 col-6 mb-3">
+      <div class="col-lg-2 col-6">
         <select class="form-control" name="region" onchange="this.form.submit()">
           <option value="">{_LANG_579}</option>
           <!-- BEGIN region -->
@@ -28,11 +45,16 @@
         </select>
       </div>
       <!-- ENDIF -->
-      <div class="col-md-3 col-12 mb-3">
-        <input class="form-control" type="text" name="city" value="{CITY}" placeholder="{_LANG_232}" />
+      <div class="col-lg-2 col-12 mb-2 mb-lg-0">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text bg-white " style="border-right: 0;"><i class="fas fa-lg fa-map-marker-alt"></i></span>
+          </div>
+          <input class="form-control" type="text" name="city" value="{CITY}" placeholder="{_LANG_232}" style="border-left: 0;"/>
+        </div>
       </div>
       <!-- IF LIST_TYPE == '' && .item_type -->
-      <div class="col-md-3 col-12">
+      <div class="col-lg-2 col-12 mb-2 mb-lg-0">
         <select name="i_type" class="form-control" onchange="this.form.submit()">
           <option value="">{_LANG_446}</option>
           <!-- BEGIN item_type -->
@@ -41,7 +63,7 @@
         </select>
       </div>
       <!-- ENDIF -->
-      <div class="col-md-3 col-12">
+      <div class="col-lg-3 col-12 mb-2 mb-lg-0">
         <select class="form-control" name="orderby" onchange="this.form.submit()">
           <option value="">{_LANG_600}</option>
           <option value="dateDESC"<!-- IF ORDERBY == 'dateDESC' --> selected<!-- ENDIF -->>{_LANG_103}</option>
@@ -52,8 +74,8 @@
           <!-- ENDIF -->
         </select>
       </div>
-      <div class="col-auto my-2 ml-auto">
-        <button type="submit" name="search-button" value="1" class="btn btn-main btn-block text-uppercase"><i class="fas fa-search"></i> {_LANG_119}</button>
+      <div class="col-lg-2 col-12 mb-2 mb-lg-0">
+        <button type="submit" name="search-button" value="1" class="btn btn-primary border-content w-100"><i class="fas fa-search"></i> {_LANG_119}</button>
       </div>
     </div>
     <!-- IF LIST_TYPE == '' -->

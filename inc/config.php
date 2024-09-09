@@ -7,9 +7,9 @@ if (stristr(htmlentities($_SERVER['PHP_SELF']), "config.php"))
 }
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'host720720_medtalento');
-define('DB_PASS', 'BugcERMQfDzVM4ZG');
-define('DB_NAME', 'host720720_medtalento');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'tirjobs2');
 define('DB_PORT', 0);
 
 define('DB_PREFIX', 'jmlnet');

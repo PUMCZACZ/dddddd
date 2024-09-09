@@ -1266,4 +1266,88 @@ jQuery(document).ready(function() {
 		$('#search-form').show();
 	});
 
+
+  // package price toggle content
+  $(document).ready(function () {
+      const toggleViews = ['.free-package', '.package-adv', '.single-ad'];
+
+      function updateView(selectedValue) {
+          $(toggleViews.join(', ')).not('.' + selectedValue).addClass('hidden');
+
+          $('.' + selectedValue).removeClass('hidden');
+      }
+
+      $('.toggle-price').on('click', function () {
+          $('.toggle-price').removeClass('btn-primary');
+          $(this).addClass('btn-primary');
+
+          const selectedValue = $(this).val() ?? 'package-adv';
+          updateView(selectedValue);
+      });
+
+      const initialValue = $('.toggle-price.btn-primary').val() || 'package-adv';
+      updateView(initialValue);
+  });
+
+
+  // additional services toggle content
+  $(document).ready(function () {
+      const toggleViews = ['.ad-campaign', '.limited-promotion', '.email-marketing', '.post-industry'];
+
+      function updateView(selectedValue) {
+          $(toggleViews.join(', ')).not('.' + selectedValue).addClass('hidden');
+
+          $('.' + selectedValue).removeClass('hidden');
+      }
+
+      $('.toggle-services').on('click', function () {
+          $('.toggle-services').removeClass('btn-primary');
+
+          $(this).addClass('btn-primary');
+
+          const selectedValue = $(this).val() ?? 'package-ads';
+          updateView(selectedValue);
+      });
+
+      const initialValue = $('.toggle-services.btn-primary').val() || 'ad-campaign';
+      updateView(initialValue);
+  });
+
+  $(document).ready(function () {
+      $('.btn-collapse').on('click', function () {
+          const chevronDown = $(this).find('.chevron-down');
+          const chevronUp = $(this).find('.chevron-up');
+
+          if (chevronUp.hasClass('hidden')) {
+              chevronDown.addClass('hidden');
+              chevronUp.removeClass('hidden');
+          } else {
+              chevronDown.removeClass('hidden');
+              chevronUp.addClass('hidden');
+          }
+      });
+  });
+
+  $(function(){
+      function rescaleCaptcha(){
+          let recaptcha = $('.g-recaptcha'),
+              width = recaptcha.parent().width(),
+              scale;
+
+          if (width < 380) {
+              scale = width / 380;
+          } else{
+              scale = 1.0;
+          }
+
+          recaptcha.css('transform', 'scale(' + scale + ')');
+          recaptcha.css('-webkit-transform', 'scale(' + scale + ')');
+          recaptcha.css('transform-origin', '0 0');
+          recaptcha.css('-webkit-transform-origin', '0 0');
+      }
+
+      rescaleCaptcha();
+      $( window ).resize(function() { rescaleCaptcha(); });
+
+  });
 </script>

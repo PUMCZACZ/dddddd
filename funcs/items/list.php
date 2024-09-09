@@ -42,6 +42,7 @@ $dataTPL['address_view_mode_tiles'] = $url.'&amp;view-mode=tiles';
 $dataTPL['list_type'] = $itemsClass->itemsType($_GET['type']);
 $dataTPL['id'] = $getID;
 $dataTPL['sitename_string'] = $itemsClass->catName($getID).' - '.$classMain->mainConfig->sitename;
+$dataTPL['view'] = http_build_query($_GET);
 $classMain->dataTPLarray($dataTPL);
 
 $itemsClass->itemsFilters();
