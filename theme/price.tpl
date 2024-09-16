@@ -6,7 +6,7 @@
 <div class="main-page mp-banner price pt-5">
     <div class="d-block main-banner mb-5">
         <div id="carouselMain" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="min-height: unset !important">
                 <div class="carousel-item-active">
                 </div>
             </div>
@@ -16,7 +16,7 @@
         <div class="pb-0 my-0" >
             <div class="price-container shadow" >
                 <h1 class="font-weight-bold" style="color: black">Odkryj, jak Medtalento.pl usprawnia proces rekrutacyjny</h1>
-                <p class="my-4 h4" style="color: black">Na naszej platformie, prezentujemy Twoją ofertę ogłoszeniową najlepszym kandydatom, co znacząco
+                <p class="my-4 h4" style="color: black">Na naszej platformie, prezentujemy Twoją ofertę ogłoszeniową najlepszym <br> kandydatom, co znacząco
                     upraszcza i przyspiesza proces rekrutacji.</p>
             </div>
         </div>
@@ -128,7 +128,7 @@
             efektywne prowadzenie procesu rekrutacyjnego!
         </div>
         <div class="mt-5">
-            <button class="btn btn-primary">Zacznij rekrutować efektywnie!</button>
+            <a href="{SITEURL}/funcs.php?name=contact" class="btn btn-primary">Zacznij rekrutować efektywnie!</a>
         </div>
     </div>
 </section>
@@ -142,10 +142,10 @@
             <div class="p-2" style="border: 2px solid #CCC; border-radius: 2.5em;">
                 <div class="row nav-package-price">
                     <div class="col my-auto">
-                        <button class="btn btn-primary toggle-price" value="package-ads" style="border-radius: 2.5em;">Pakiety ogłoszeń</button>
+                        <button class="btn btn-primary toggle-price" value="package-adv" style="border-radius: 2.5em;">Pakiety ogłoszeń</button>
                     </div>
                     <div class="col my-auto">
-                        <button type="button" value="single-ad" class="btn  toggle-price" style="border-radius: 2.5em;">Pojedyncze ogłoszenia</button>
+                        <button type="button" value="single-ad" class="btn toggle-price" style="border-radius: 2.5em;">Pojedyncze ogłoszenia</button>
                     </div>
                     <div class="col my-auto">
                         <button class="btn toggle-price" value="free-package" style="border-radius: 2.5em;">Pakiet darmowy</button>
@@ -221,7 +221,7 @@
                                 Maksymalne oszczędności
                             </div>
                             <div>
-                                Skoncentruj się na jakości, nie ilości. Inwestuj w cenne CV bez zbędnych wydatków. W TirJob dbamy o to, by każda aplikacja była wartościowa.
+                                Skoncentruj się na jakości, nie ilości. Inwestuj w cenne CV bez zbędnych wydatków. W Medtalento dbamy o to, by każda aplikacja była wartościowa.
                             </div>
                         </div>
                     </div>
@@ -253,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-5 d-flex justify-content-center">
-                    <button class="btn btn-application-filled" style="">Zacznij Współpracę Teraz!</button>
+                    <a class="btn btn-application-filled" href="{SITEURL}/funcs.php?name=contact">Zacznij Współpracę Teraz!</a>
                 </div>
             </div>
         </div>
@@ -270,13 +270,13 @@
                             <img class="banner-img" src="{SITEURL}/theme/img/banner-img.png" alt="check image"/>
                         </div>
                         <div class="position-absolute banner-img-popups-left">
-                            <div class="bg-white rounded p-2 p-sm-3">
+                            <div class="bg-white rounded p-2" style="font-size: 10px">
                                 Twoje rekrutacje <br>
-                                w jednym miejscu
+                                <b style="font-weight: 800">w jednym miejscu</b>
                             </div>
                         </div>
                         <div class="position-absolute banner-img-popups-right"">
-                        <div class="bg-white rounded p-2 p-sm-3">
+                        <div class="bg-white rounded p-2" style="font-size: 10px">
                             Pakiety cenowe dające <br>
                             wiele oszczędności
                         </div>
@@ -294,7 +294,7 @@
                         lub mailowo. Z TirJob masz pewność, że znajdziesz idealnych kandydatów.
                     </div>
                     <div>
-                        <button class="btn bg-white mb-3 mb-lg-0 w-100" style="max-width: 300px; text-wrap: balance">Zarezerwuj konsultację teraz!</button>
+                        <button class="btn btn-application-filled mb-3 mb-lg-0 w-100 text-center" style="max-width: 300px; text-wrap: balance">Zarezerwuj konsultację teraz!</button>
                     </div>
                 </div>
             </div>
@@ -337,33 +337,33 @@
 
     <div class="row w-100">
         <div class="col-12 pt-5 text-center">
-            <div class="text-center" style="font-size: 40px; font-weight: 700; line-height: 60px">
-                Znajdź najlepszych kierowców
+            <div class="text-center" style="font-size: 40px; font-weight: 900; line-height: 60px">
+                Znajdź najlepszych profesjonalistów medycznych
                 w 3 prostych krokach!
             </div>
             <div class="text-center">
-                Szukasz najlepszych talentów w branży transportowej? Wykonaj <br>
+                Szukasz najlepszych talentów w branży medycznej? Wykonaj <br>
                 poniższe kroki, aby dodać ogłoszenie i znaleźć idealnych <br>
                 pracowników.
             </div>
         </div>
     </div>
     <div class="row w-100">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-5 offset-md-1">
             <img class="w-100" src="{SITEURL}/theme/img/svg/designer-working.svg" alt="designer working"/>
         </div>
         <div class="col-12 col-md-6 align-content-center">
             <div class="d-flex flex-column justify-content-center">
                 <div class="d-inline-flex mb-4 align-items-center">
                     <span class="price-best-riders-numbers">1</span>
-                    <span class="price-best-riders-text">Załóż konto na portalu Tirjob.pl</span>
+                    <span class="price-best-riders-text" style="font-weight: 800">Załóż konto na portalu Medtalento.pl</span>
                 </div>
                 <div class="d-inline-flex mb-2">
                     <div class="mr-3">
                         <img src="{SITEURL}/theme/img/check_circle.svg" alt="check image"/>
                     </div>
                     <div>
-                        Szybkie i łatwe tworzenie konta: Stwórz konto firmowe w kilka minut, wypełniając wszystkie potrzebne dane, zaczynaj
+                        <b style="font-weight: 900">Szybkie i łatwe tworzenie konta: </b>Stwórz konto firmowe w kilka minut, wypełniając wszystkie potrzebne dane, zaczynaj
                         klikając tutaj:
                         <a class="link" href="{SITEURL}/funcs.php?name=user">ZAREJESTRUJ SIĘ</a>
                     </div>
@@ -382,11 +382,11 @@
     </div>
 
     <div class="row w-100">
-        <div class="col-12 col-md-6 align-content-center order-1 order-md-0">
+        <div class="col-12 col-md-5 offset-md-1 align-content-center order-1 order-md-0">
             <div class="d-flex flex-column justify-content-center">
                 <div class="d-inline-flex mb-4 align-items-center">
                     <span class="price-best-riders-numbers">2</span>
-                    <span class="price-best-riders-text">Kup pojedyncze ogłoszenie lub pakiet ogłoszeń</span>
+                    <span class="price-best-riders-text" style="font-weight: 800">Kup pojedyncze ogłoszenie lub pakiet ogłoszeń</span>
                 </div>
                 <div class="d-inline-flex mb-2">
                     <div class="mr-3">
@@ -394,7 +394,7 @@
                     </div>
                     <div>
                         Ogłoszenie za darmo: Dodaj jedną ofertę na 30 dni zupełnie za darmo i przetestuj portal:
-                        <a href="#">AKTYWUJ BEZPŁATNY PAKIET</a>
+                        <a href="#" class="link">AKTYWUJ BEZPŁATNY PAKIET</a>
                     </div>
                 </div>
                 <div class="d-inline-flex mb-2">
@@ -407,20 +407,20 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 align-content-center order-0 order-md-1">
+        <div class="col-12 col-md-5 offset-md-1 align-content-center order-0 order-md-1">
             <img class="w-100" src="{SITEURL}/theme/img/svg/payment-processed.svg" alt="payment processed img"/>
         </div>
     </div>
 
     <div class="row w-100">
-        <div class="col-12 col-md-6 align-content-center">
+        <div class="col-12 col-md-5 offset-md-1 align-content-center">
             <img class="w-100" src="{SITEURL}/theme/img/svg/get-a-job-promotion.svg" alt="get a job promotion img"/>
         </div>
         <div class="col-12 col-md-6 align-content-center">
             <div class="d-flex flex-column justify-content-center">
                 <div class="d-inline-flex mb-4 align-items-center">
                     <span class="price-best-riders-numbers">3</span>
-                    <span class="price-best-riders-text">Zacznij budować swój wymarzony zespół już dziś!</span>
+                    <span class="price-best-riders-text" style="font-weight: 800">Zacznij budować swój wymarzony zespół już dziś!</span>
                 </div>
                 <div class="d-inline-flex mb-2">
                     <div class="mr-3">
@@ -483,7 +483,7 @@
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="collapse-2" data-parent="#accordionExample">
                         <div class="card-body">
-                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                            Pakiet nielimitowany umożliwia publikację dowolnej liczby ogłoszeń w określonym czasie, co jest idealne dla firm często poszukujących nowych pracowników. W ramach tego pakietu otrzymujesz również dodatkowe usługi promocyjne oraz wsparcie dedykowanego konsultanta. Dodatkowe opcje promowania obejmują wyróżnienia, podbicia oraz kampanie reklamowe w mediach społecznościowych, które znacząco zwiększają widoczność i atrakcyjność Twoich ogłoszeń.
                         </div>
                     </div>
                 </div>
@@ -501,7 +501,7 @@
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="collapse-3" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Akceptujemy płatności kartą kredytową, przelewem bankowym oraz online. Zwroty kosztów za niewykorzystany okres publikacji są możliwe w wyjątkowych przypadkach, takich jak problemy techniczne po naszej stronie. Szczegóły dotyczące polityki zwrotów znajdziesz w naszym regulaminie na stronie.
                         </div>
                     </div>
                 </div>
@@ -519,7 +519,7 @@
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="collapse-4" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Tak, oferujemy kampanie reklamowe na Facebooku, Instagramie oraz Google, co pozwala na zwiększenie zasięgu wśród specjalistów medycznych. Kampanie email marketingowe są spersonalizowane i kierowane do zarejestrowanych użytkowników, którzy wykazali zainteresowanie określonymi ofertami. To skuteczny sposób na dotarcie do potencjalnych kandydatów bezpośrednio do ich skrzynek pocztowych.
                         </div>
                     </div>
                 </div>
@@ -537,7 +537,7 @@
                     </div>
                     <div id="collapseFifth" class="collapse" aria-labelledby="collapse-5" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Dostarczamy szczegółowe raporty statystyczne dotyczące wyświetleń, kliknięć oraz odpowiedzi kandydatów na Twoje ogłoszenia. Po zakończeniu kampanii reklamowej otrzymasz raport zawierający dane o zasięgu reklamy, liczbie wyświetleń, kliknięć oraz interakcjach z ogłoszeniem. Te informacje pomogą Ci ocenić skuteczność kampanii i wprowadzać ewentualne modyfikacje.
                         </div>
                     </div>
                 </div>
@@ -555,7 +555,7 @@
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="collapse-6" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Dedykowany konsultant oferuje indywidualne wsparcie, pomagając optymalizować treść ogłoszeń, rozwiązywać problemy oraz zwiększać skuteczność rekrutacji. Kampanie reklamowe są dostosowywane do specyficznych potrzeb Twojej firmy, aby osiągnąć jak najlepsze wyniki. Dzięki temu masz pewność, że Twoje ogłoszenia są skierowane do odpowiednich kandydatów w najbardziej efektywny sposób.
                         </div>
                     </div>
                 </div>
@@ -573,7 +573,7 @@
                     </div>
                     <div id="collapseSeven" class="collapse" aria-labelledby="collapse-6" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Post w Grupie Branżowej to ekskluzywna forma promocji docierająca do społeczności profesjonalistów medycznych na Facebooku. Publikacja ogłoszenia na stronie głównej MedTalento zapewnia maksymalną widoczność i szybsze znalezienie kandydata dzięki wyższej ekspozycji. Obie te opcje promocyjne znacząco zwiększają szanse na znalezienie idealnych kandydatów.
                         </div>
                     </div>
                 </div>
@@ -591,7 +591,7 @@
                     </div>
                     <div id="collapseEight" class="collapse" aria-labelledby="collapse-6" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Tak, nasz zespół wsparcia jest dostępny, aby pomóc Ci zoptymalizować treść ogłoszenia. Doradzamy, jak najlepiej sformułować ofertę, aby przyciągnąć odpowiednich kandydatów, zwiększając tym samym skuteczność Twoich ogłoszeń. Możesz liczyć na nasze doświadczenie i wiedzę w zakresie rekrutacji, co pozwoli Ci osiągnąć lepsze wyniki.
                         </div>
                     </div>
                 </div>
@@ -609,7 +609,7 @@
                     </div>
                     <div id="collapseNine" class="collapse" aria-labelledby="collapse-6" data-parent="#accordionExample">
                         <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            Tak, MedTalento oferuje wsparcie techniczne dla wszystkich użytkowników. Jeśli napotkasz jakiekolwiek problemy z korzystaniem z portalu, możesz skontaktować się z naszym zespołem wsparcia technicznego za pomocą formularza kontaktowego, e-maila lub telefonicznie. Nasz zespół jest dostępny, aby pomóc rozwiązać wszelkie problemy techniczne i zapewnić płynne korzystanie z naszych usług.
                         </div>
                     </div>
                 </div>

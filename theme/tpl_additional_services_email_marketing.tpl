@@ -47,11 +47,16 @@
                 <img src="{SITEURL}/theme/img/check_circle.svg" alt="check image"/>
             </div>
             <div class="col">
-                Oferujemy zaprojektowanie i przygotowanie spersonalizowanych <br>
-                wiadomości e-mail, dopasowanych do specyfiki Twojej oferty <br>
+                Oferujemy zaprojektowanie i przygotowanie spersonalizowanych
+                wiadomości e-mail, dopasowanych do specyfiki Twojej oferty
                 pracy i grupy zawodowej, do której chcesz dotrzeć.
             </div>
         </div>
         <p class="additional-services-text mt-2">Koszt: 399 zł netto</p>
+        <p class="mt-4">
+            <a href="" class="btn btn-primary" style="border-radius: 2.5em">
+                Zwiększ Zasięg – Promuj Teraz!
+            </a>
+        </p>
     </div>
 </div>

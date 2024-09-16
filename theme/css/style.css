@@ -97,7 +97,7 @@ html, body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  font-weight: 300;
+  /*font-weight: 300;*/
   line-height: 1.65em;
 }
 .wrapper-container {
@@ -2526,6 +2526,10 @@ img.companies-img {
     top: 200px;
     padding: 48px 64px;
   }
+  
+  @media (min-width: 1200px) {
+    left: 11%;
+  }
 }
 
 .mp-banner.price {
@@ -2585,7 +2589,7 @@ img.companies-img {
 
 .banner-text {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 140%;
   letter-spacing: -0.025em;
   color: white;
@@ -2609,6 +2613,10 @@ img.companies-img {
   }
 }
 
+.payment-item {
+  list-style: none;
+}
+
 .banner-relative {
   position: relative;
   max-width: 400px;
@@ -2623,7 +2631,7 @@ img.companies-img {
   right: 0;
 
   @media (min-width: 992px) {
-    top: 250px;
+    top: 200px;
   }
 }
 
@@ -2690,8 +2698,18 @@ img.companies-img {
   color: #0E9284;
 }
 
-.btn-application .filled {
+.btn-application-filled {
   background-color: #0E9284;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  border-radius: 24px;
+}
+.btn-application-filled:hover {
+  color:white;
 }
 
 .grid-socials {
@@ -2700,6 +2718,7 @@ img.companies-img {
   gap: 16px;
   @media (min-width: 992px) {
     gap: 32px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -2834,7 +2853,6 @@ img.companies-img {
   -webkit-appearance: none;
   background-color: #fff;
   border: 2px solid black;
-  border-radius: 50%;  /* This makes the checkbox rounded */
   cursor: pointer;
   outline: none;
   transition: background-color 0.3s ease;
@@ -2883,3 +2901,43 @@ img.companies-img {
   margin-top: -20px;
   z-index: 0;
 }
+.company-header {
+  font-size: 16px;
+  font-weight: 900;
+
+  @media (min-width: 500px) {
+
+    font-size: 24px;}
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.packet-price-text {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: #0E9284;
+}
+
+.link {
+  color: #245DA5;
+  font-weight: 800;
+}
+
+.btn-outline-danger.ogloszenia:hover {
+  background-color: unset;
+  color: red;
+  border: unset;
+}
+
+

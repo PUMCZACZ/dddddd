@@ -2,7 +2,11 @@
 </main>
 <div class="container-account py-3">
   <main class="container">
+    <!-- IF U_TYPE='business' -->
+    <h1>Panel użytkownika firmowego</h1>
+    <!-- ELSE -->
     <h1>Panel użytkownika indywidualnego</h1>
+    <!-- ENDIF -->
     <ul class="nav justify-content-center py-3">
       <li class="nav-item"><a class="nav-link<!-- IF FUNC_FILE == '' --> active<!-- ENDIF -->" href="{SITEURL}/funcs.php?name=user">{_LANG_213}</a></li>
       <li class="nav-item"><a class="nav-link<!-- IF FUNC_FILE == 'items_list' --> active<!-- ENDIF -->" href="{SITEURL}/funcs.php?name=user&amp;file=items_list">{_LANG_214}</a></li>

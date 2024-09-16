@@ -5,7 +5,11 @@
       <div style="border-radius: 8px;" class="shadow p-3 my-3 item<!-- IF FUNC_FILE == 'items_list' || FUNC_FILE == 'watching' --> item-user<!-- ENDIF --><!-- IF VIEW-MODE == 'tiles' --> item-tiles<!-- ENDIF --><!-- IF i.PROMO_DISTINCTION --> distinction<!-- ENDIF --><!-- IF i.PROMO_BACKLIGHT --> backlight<!-- ENDIF -->">
         <div class="row">
           <!-- IF i.PROMO_DISTINCTION && POKAZ_PROMO --><div class="corner-ribbon"></div><!-- ENDIF -->
-          <a title="{i.TITLE}" class="link" href="{i.HREF}">{_LANG_191}</a>
+          <!-- IF VIEW == 'name=items&file=list' -->
+          <a title="{i.TITLE}" class="link" href="{i.HREF}">{_LANG_191} </a>
+          <!-- ELSE -->
+          <a title="{i.TITLE}" class="link" href="{SITEURL}/funcs.php?name=items&amp;file=company&amp;id={i.USER_ID}">{_LANG_191}</a>
+          <!-- ENDIF -->
           <!-- IF VIEW-MODE == 'tiles' -->
           <h2 class="col-12 mb-2 text-truncate<!-- IF i.PROMO_BOLD --> bold<!-- ENDIF -->">{i.TITLE}</h2>
           <!-- ENDIF -->
@@ -119,14 +123,13 @@
                   <path d="M5.89968 11.2166L7.99968 9.94997L10.0997 11.2333L9.54969 8.8333L11.3997 7.2333L8.96635 7.01663L7.99968 4.74997L7.03302 6.99997L4.59968 7.21663L6.44968 8.8333L5.89968 11.2166ZM7.99968 11.5166L5.23302 13.1833C5.1108 13.2611 4.98302 13.2944 4.84968 13.2833C4.71635 13.2722 4.59968 13.2277 4.49968 13.15C4.39968 13.0722 4.32191 12.975 4.26635 12.8583C4.2108 12.7416 4.19968 12.6111 4.23302 12.4666L4.96635 9.31663L2.51635 7.19997C2.40524 7.09997 2.3358 6.98608 2.30802 6.8583C2.28024 6.73052 2.28857 6.60552 2.33302 6.4833C2.37746 6.36108 2.44413 6.26108 2.53302 6.1833C2.62191 6.10552 2.74413 6.05552 2.89968 6.0333L6.13302 5.74997L7.38302 2.7833C7.43857 2.64997 7.52468 2.54997 7.64135 2.4833C7.75802 2.41663 7.87746 2.3833 7.99968 2.3833C8.12191 2.3833 8.24135 2.41663 8.35802 2.4833C8.47469 2.54997 8.5608 2.64997 8.61635 2.7833L9.86635 5.74997L13.0997 6.0333C13.2552 6.05552 13.3775 6.10552 13.4664 6.1833C13.5552 6.26108 13.6219 6.36108 13.6664 6.4833C13.7108 6.60552 13.7191 6.73052 13.6914 6.8583C13.6636 6.98608 13.5941 7.09997 13.483 7.19997L11.033 9.31663L11.7664 12.4666C11.7997 12.6111 11.7886 12.7416 11.733 12.8583C11.6775 12.975 11.5997 13.0722 11.4997 13.15C11.3997 13.2277 11.283 13.2722 11.1497 13.2833C11.0164 13.2944 10.8886 13.2611 10.7664 13.1833L7.99968 11.5166Z" fill="#2196F3"/>
                 </svg>
 
-
                 <a class="btn btn-info px-0 col-6 col-lg-12 blue" href="{SITEURL}/funcs.php?name=user&amp;file=items_list&amp;op=bids&amp;id={i.ID}">{_LANG_187}</a>
               </div>
               <!-- ENDIF -->
 
               <!-- ENDIF -->
               <div class="col-6 col-lg-12 button-item-list">
-                <a class="btn btn-outline-danger" href="{SITEURL}/funcs.php?name=user&amp;file=items_list&amp;op=delete&amp;id={i.ID}" onclick="return confirm('Jesteś pewien, że chcesz usunąć ogłoszenie?');">{_LANG_182}</a>
+                <a class="btn btn-outline-danger ogloszenia" href="{SITEURL}/funcs.php?name=user&amp;file=items_list&amp;op=delete&amp;id={i.ID}" onclick="return confirm('Jesteś pewien, że chcesz usunąć ogłoszenie?');">{_LANG_182}</a>
               </div>
               <!-- ENDIF -->
               <!-- IF FUNC_FILE == 'watching' -->

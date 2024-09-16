@@ -24,10 +24,6 @@
 				<!-- ELSE -->
 				<p>{_LANG_325}<strong>{_LANG_326}</strong>{_LANG_321}</p>
 				<div class="mb-3">
-					<label>{_LANG_323}</label>
-					<input type="password" name="new_pass2" class="form-control" required="required" placeholder="Powtórz nowe hasło" />
-				</div>
-				<div class="mb-3">
 					<label>{_LANG_328}</label>
 					<input type="email" name="adres_email" class="form-control" required="required" />
 				</div>

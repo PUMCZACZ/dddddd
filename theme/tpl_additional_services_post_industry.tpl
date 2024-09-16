@@ -48,11 +48,16 @@
                 <img src="{SITEURL}/theme/img/check_circle.svg" alt="check image"/>
             </div>
             <div class="col">
-                Dedykowany post zachęci kandydatów do interakcji z Twoim <br>
-                ogłoszeniem, co przełoży się na większą liczbę kliknięć i zgłoszeń <br>
+                Dedykowany post zachęci kandydatów do interakcji z Twoim
+                ogłoszeniem, co przełoży się na większą liczbę kliknięć i zgłoszeń
                 rekrutacyjnych.
             </div>
         </div>
         <p class="additional-services-text mt-2">Koszt: 99 zł netto</p>
+        <p class="mt-4">
+            <a href="" class="btn btn-primary" style="border-radius: 2.5em">
+                Zwiększ Zasięg – Promuj Teraz!
+            </a>
+        </p>
     </div>
 </div>

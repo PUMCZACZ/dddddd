@@ -1,6 +1,6 @@
 <!-- INCLUDE theme_header.tpl -->
 <div class="col-md-9 col-12 mx-auto mt-5">
-  <section class="border p-3">
+  <section class="shadow p-4" style="border-radius: 24px">
     <h3 class="text-center my-3">Kontakt</h3>
     <!-- IF CONTENT_NAME_16 -->
     <h3>{CONTENT_NAME_16}</h3>

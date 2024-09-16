@@ -414,7 +414,7 @@
       </div>
       <div class="modal-footer">
         <input type="hidden" name="chngUtype" value="1" />
-        <button type="submit" class="btn btn-main">{_LANG_274}</button>
+        <button type="submit" class="btn btn-primary">{_LANG_274}</button>
       </div>
     </form>
   </div>

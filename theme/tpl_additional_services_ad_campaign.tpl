@@ -103,10 +103,11 @@
                 Nasi specjaliści pomogą dobrać Ci optymalne kanały reklamowe i cele kampanii, aby uzyskać maksymalny efekt.
             </div>
         </div>
+        <p class="mt-4 ad-campaign">
+            <a href="" class="btn btn-primary" style="border-radius: 2.5em">
+                Zwiększ Zasięg – Promuj Teraz!
+            </a>
+        </p>
     </div>
+
 </div>
-<p class="text-center mt-4 ad-campaign">
-    <a href="" class="btn btn-primary" style="border-radius: 2.5em">
-        Zwiększ Zasięg – Promuj Teraz!
-    </a>
-</p>

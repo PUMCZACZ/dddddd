@@ -29,10 +29,10 @@
                 <img src="{SITEURL}/theme/img/check_circle.svg" alt="check image"/>
             </div>
             <div class="col">
-                Wyróżnij się dzięki dedykowanym postom na naszym profilu na <br>
-                Facebooku, wzmocnionymi płatną reklamą. Jeśli zależy Ci na <br>
-                dodatkowej widoczności, oferujemy stworzenie specjalnego posta z <br>
-                Twoją ofertą pracy, który pojawi się na profilu naszej platformy, <br>
+                Wyróżnij się dzięki dedykowanym postom na naszym profilu na
+                Facebooku, wzmocnionymi płatną reklamą. Jeśli zależy Ci na
+                dodatkowej widoczności, oferujemy stworzenie specjalnego posta z
+                Twoją ofertą pracy, który pojawi się na profilu naszej platformy,
                 TirJob.pl na Facebooku.
             </div>
         </div>
@@ -55,5 +55,10 @@
             </div>
         </div>
         <p class="additional-services-text mt-2">Koszt: 199 zł netto</p>
+        <p class="mt-4">
+            <a href="" class="btn btn-primary" style="border-radius: 2.5em">
+                Zwiększ Zasięg – Promuj Teraz!
+            </a>
+        </p>
     </div>
 </div>

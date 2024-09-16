@@ -68,7 +68,7 @@
     <div class="order-1 order-md-0 img-card-content card-content card left shadow">
       <h4 class="h5 font-weight-bold">Rekrutujesz i poszukujesz kandydatów do pracy?</h4>
       <p class="recruitment-text my-4 my-sm-2 my-lg-4 font-weight-medium">
-        Zarejestruj się, aby publikować oferty pracy dla kierowców zawodowych. Dodaj ogłoszenie z opcją publikacji na 30, 60 lub 90 dni i przyciągnij najlepsze talenty do swojego zespołu!
+        Zarejestruj się, aby publikować oferty pracy dla profesjonalistów medycznych. Dodaj ogłoszenie z opcją publikacji na 30, 60 lub 90 dni i przyciągnij najlepsze talenty do swojego zespołu!
       </p>
       <a class="btn btn-primary mt-3 text-white w-100" href="{SITEURL}/funcs.php?name=items&amp;file=add&amp;new=1" role="button">Dodaj nową ofertę pracy</a>
     </div>
@@ -145,7 +145,10 @@
     <div class="pt-0">
       <!-- INCLUDE tpl_items_list.tpl -->
     </div>
-    <p class="text-center mb-0 mt-5"><a class="btn btn-primary-light border font-weight-bold" href="{SITEURL}/funcs.php?name=items&amp;file=list">Zobacz wszystkie oferty</a></p>
+    <p class="text-center mb-0 mt-5">
+      <a class="btn btn btn-primary-light" href="{SITEURL}/funcs.php?name=items&amp;file=list">
+        Zobacz wszystkie oferty</a>
+    </p>
   </section>
   <!--<p class="text-center mt-5"><a class="btn btn-main" href="wszystie-category-0.html">Więcej ogłoszeń</a></p>-->
 </div>
@@ -157,21 +160,39 @@
     <div class="row">
       <div class="col-lg-10 col-12 mx-auto">
         <div class="row text-center font-weight-bold mt-5">
+
           <div class="col">
+            <a href="{SITEURL}/funcs.php?name=user&file=register" style="text-decoration: none;">
             <img style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_1.png">
-            <p class="mt-4">Zarejestruj się na tirjob.pl ustalając login i hasło</p>
+              <p class="mt-4">
+                Zarejestruj się na medtalento.pl ustalając login i hasło
+              </p>
+            </a>
           </div>
+
           <div class="col">
-            <img style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_2.png">
-            <p class="mt-4">Jako kandydat szukający pracy, aplikuj na ogłoszenia</p>
+            <a href="{SITEURL}/funcs.php?name=items&file=list" style="text-decoration: none;">
+              <img href="{SITEURL}/funcs.php?name=items&file=list" style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_2.png">
+              <p class="mt-4">
+                  Jako kandydat szukający pracy, aplikuj na ogłoszenia
+              </p>
+            </a>
           </div>
+
           <div class="col">
-            <img style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_3.png">
-            <p class="mt-4">Jako rekruter konfiguruj i publikuj dowolne oferty pracy</p>
+            <a href="{SITEURL}/funcs.php?name=items&file=add" style="text-decoration: none;">
+              <img style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_3.png">
+              <p class="mt-4">
+                Jako rekruter konfiguruj i publikuj dowolne oferty pracy
+              </p>
+            </a>
           </div>
+
           <div class="col">
+            <a href="#">
             <img style="border: 2px solid #CCC; border-radius: .8em;" src="{SITEURL}/theme/img/icon_4.png">
             <p class="mt-4">To wszystko! Zacznij korzystać z nowoczesnej rekrutacji</p>
+            </a>
           </div>
         </div>
       </div>
@@ -243,7 +264,7 @@
 
       <!-- BEGIN p -->
       <div>
-        <div class="d-flex flex-column align-items-center rounded shadow" style="height: 100%">
+        <div class="d-flex flex-column align-items-center rounded shadow p-2" style="height: 100%">
           <img class="companies-img" src="{p.PHOTO}">
           <div class="companies-card-content">
             <h5 class="mt-2 mb-4 font-weight-bold">{p.COMPANY_NAME}</h5>

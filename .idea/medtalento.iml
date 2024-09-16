@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/apus-framework/libs/redux/redux-core/appsero" isTestSource="false" packagePrefix="ReduxAppsero" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/elementor/includes" isTestSource="false" packagePrefix="Elementor" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/one-click-demo-import/inc" isTestSource="false" packagePrefix="OCDI" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/woocommerce/packages/action-scheduler/classes" isTestSource="false" packagePrefix="Action_Scheduler" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/wp-job-board-pro/libraries/facebook-sdk" isTestSource="false" packagePrefix="Facebook" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/wp-job-board-pro/libraries/mpdf" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/wp-job-board-pro/libraries/mpdf/mpdf/mpdf/src" isTestSource="false" packagePrefix="Mpdf" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/wp-job-board-pro/libraries/mpdf/myclabs/deep-copy/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-content/plugins/wp-job-board-pro/libraries/mpdf/psr/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/_OLD/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/funcs/user/classes" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

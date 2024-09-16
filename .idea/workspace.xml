@@ -5,61 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1af66dac-3c61-4a8d-ab18-d7a67dd4a9f8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/funcs/price/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/banner-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/banner-mainpage.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/check_circle.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/icon_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/icon_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/icon_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/icon_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/logo-medtalento.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/mainpage-medtalento-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/poziom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/price_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/price_mobile_img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/business-deal.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/chevron-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/chevron-up.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/designer-working.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/get-a-job-promotion.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/img/svg/payment-processed.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/price.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_additional_services.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_additional_services_ad_campaign.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_additional_services_email_marketing.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_additional_services_limited_promotion.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_additional_services_post_industry.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_free_package.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_package.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_single_ad.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/funcs/items/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/funcs/items/list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/lang-pl.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/lang-pl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/admin/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/admin/login.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/img/maestro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/img/mastercard.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/img/p24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/theme/img/visa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/funcs/items/company.php" beforeDir="false" afterPath="$PROJECT_DIR$/funcs/items/company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/company.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/company.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/contact.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/contact.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/theme/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/item-add.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/item-add.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/item.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/item.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/main-page.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/main-page.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/template_open.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/template_open.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/price.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/price.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/theme_footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/theme_footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/theme_header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/theme_header.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_additional_services_ad_campaign.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_additional_services_ad_campaign.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_additional_services_email_marketing.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_additional_services_email_marketing.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_additional_services_limited_promotion.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_additional_services_limited_promotion.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_additional_services_post_industry.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_additional_services_post_industry.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/tpl_items_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_items_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/tpl_javascript.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_javascript.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/tpl_news_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_news_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/tpl_recaptcha.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_recaptcha.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/tpl_user_members_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_members_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_user_members_list_free_package.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_free_package.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_user_members_list_package.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_package.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/tpl_user_members_list_single_ad.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_members_list_single_ad.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/tpl_user_open.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_open.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/tpl_user_register_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/tpl_user_register_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/user-login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-login.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/user-member.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-member.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/theme/user-pass-forgot.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-pass-forgot.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/user-payments.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-payments.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/user-subscription.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-subscription.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theme/user-watching.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-watching.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/theme/user-payment.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/theme/user-payment.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +55,9 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/medtalento/theme/img/svg&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;future-branch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/medtalento/theme/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -99,9 +70,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/theme/img" />
       <recent name="$PROJECT_DIR$/theme/img/svg" />
       <recent name="$PROJECT_DIR$/theme/css" />
-      <recent name="$PROJECT_DIR$/theme/img" />
       <recent name="$PROJECT_DIR$/theme" />
       <recent name="$PROJECT_DIR$/funcs" />
     </key>
@@ -114,8 +85,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.18034.69" />
-        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.18034.69" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PS-242.21829.154" />
+        <option value="bundled-php-predefined-a98d8de5180a-4d9f4c849d09-com.jetbrains.php.sharedIndexes-PS-242.21829.154" />
       </set>
     </attachedChunks>
   </component>
@@ -142,6 +113,13 @@
       <workItem from="1724493816188" duration="485000" />
       <workItem from="1724854018055" duration="5371000" />
       <workItem from="1724920065919" duration="5291000" />
+      <workItem from="1725886804224" duration="3299000" />
+      <workItem from="1726062578092" duration="20968000" />
+      <workItem from="1726140051615" duration="2990000" />
+      <workItem from="1726149880704" duration="2736000" />
+      <workItem from="1726157429657" duration="8482000" />
+      <workItem from="1726307287515" duration="6554000" />
+      <workItem from="1726463132276" duration="15000" />
     </task>
     <servers />
   </component>

@@ -134,6 +134,7 @@
 					<!-- IF FREE -->
 					0.00 {CURRENCY}
 					<!-- ELSE -->
+
 					<!-- IF SUM_PROMO -->
 					<del>{SUM} {CURRENCY}</del> {SUM_PROMO} {CURRENCY}
 					<!-- ELSE -->
@@ -163,9 +164,14 @@
 					</li>
 					<!-- ENDIF -->
 					<!-- IF OPERATOR_P24 -->
-					<li class="list-group-item d-flex align-items-center">
-						<input class="" type="radio" name="operator" value="p24" id="o_p24"<!-- IF OPERATOR_P24 --> checked<!-- ENDIF --> />
-						<label class="ml-3" for="o_p24"><img class="ml-2" alt="Przelewy24" src="{SITEURL}/theme/img/payment_p24.png" /></label>
+					<li class="payment-item d-flex align-items-center">
+						<input class="mr-3" type="radio" name="operator" value="p24" id="o_p24"<!-- IF OPERATOR_P24 --> checked<!-- ENDIF --> />
+						<div class="d-flex flex-row flex-wrap">
+							<img class="p-2" src="{SITEURL}/theme/img/p24.png" style="object-fit: contain" alt="payment provider img"/>
+							<img class="p-2" src="{SITEURL}/theme/img/visa.jpg" style="object-fit: contain" alt="payment provider img"/>
+							<img class="p-2" src="{SITEURL}/theme/img/mastercard.jpg" style="object-fit: contain" alt="payment provider img"/>
+							<img class="p-2" src="{SITEURL}/theme/img/maestro.jpg" style="object-fit: contain" alt="payment provider img"/>
+						</div>
 					</li>
 					<!-- ENDIF -->
 					<!-- IF OPERATOR_BP -->
